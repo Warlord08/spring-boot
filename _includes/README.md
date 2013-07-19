@@ -163,10 +163,10 @@ _See [spring-launcher/README](spring-launcher/README.html) &
 
 ## Samples
 Groovy samples for use with the command line application are available in
-[spring-cli/samples]({{site.github}}{{site.github}}spring-cli/samples/#). To run the CLI samples type 
+[spring-cli/samples]({{site.github}}spring-cli/samples/#). To run the CLI samples type 
 `spr run <sample>.groovy` from samples directory.
 
-Java samples are available in [spring-zero-sample]({{site.github}}{{site.github}}spring-zero-samples/#) and should
+Java samples are available in [spring-zero-sample]({{site.github}}spring-zero-samples/#) and should
 be build with maven and run use `java -jar target/<sample>.jar`. The following java
 samples are provided:
 
