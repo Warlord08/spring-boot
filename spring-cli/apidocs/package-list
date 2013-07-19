@@ -1,0 +1,6 @@
+org.springframework.cli
+org.springframework.cli.command
+org.springframework.cli.compiler
+org.springframework.cli.compiler.autoconfigure
+org.springframework.cli.runner
+org.springframework.cli.template

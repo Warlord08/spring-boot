@@ -1,0 +1,7 @@
+org.springframework.autoconfigure
+org.springframework.autoconfigure.batch
+org.springframework.autoconfigure.data
+org.springframework.autoconfigure.jdbc
+org.springframework.autoconfigure.orm.jpa
+org.springframework.autoconfigure.thymeleaf
+org.springframework.autoconfigure.web

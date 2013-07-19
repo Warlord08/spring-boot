@@ -1,0 +1,11 @@
+org.springframework.actuate.audit
+org.springframework.actuate.audit.listener
+org.springframework.actuate.autoconfigure
+org.springframework.actuate.endpoint
+org.springframework.actuate.endpoint.mvc
+org.springframework.actuate.health
+org.springframework.actuate.metrics
+org.springframework.actuate.properties
+org.springframework.actuate.security
+org.springframework.actuate.trace
+org.springframework.actuate.web
