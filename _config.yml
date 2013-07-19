@@ -2,6 +2,6 @@ safe: true
 lsi: false
 pygments: true
 # Set this to empty string (--baseurl) to render locally
-baseurl: /spring-zero/
+github: https://github.com/SpringSource/spring-zero/
 project:
-  version: 0.5.0.BUILD-SNAPSHOT
+  version: 0.5.0
