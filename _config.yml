@@ -4,4 +4,4 @@ pygments: true
 # Set this to empty string (--baseurl) to render locally
 github: https://github.com/SpringSource/spring-zero/
 project:
-  version: 0.5.0
+  version: 0.5.0.BUILD-SNAPSHOT
