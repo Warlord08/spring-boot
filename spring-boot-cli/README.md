@@ -5,4 +5,4 @@ home: ../
 ---
 
 
-# Spring CLI
+# Spring Boot - CLI

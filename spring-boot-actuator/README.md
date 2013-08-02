@@ -5,7 +5,7 @@ home: ../
 ---
 
 
-# Spring Boot Actuator
+# Spring Boot - Actuator
 
 The aim of this project is minimum fuss for getting applications up
 and running in production, and in other environments.  There is a

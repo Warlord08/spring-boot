@@ -5,4 +5,5 @@ home: ../
 ---
 
 
-# Spring Boot - AutoConfigure
+# Spring Boot - Samples
+
