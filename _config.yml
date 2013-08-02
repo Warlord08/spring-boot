@@ -3,4 +3,4 @@ lsi: false
 pygments: true
 github: https://github.com/SpringSource/spring-zero/tree/master/
 project:
-  version: 0.5.0.M1
+  version: 0.5.0.BUILD-SNAPSHOT
