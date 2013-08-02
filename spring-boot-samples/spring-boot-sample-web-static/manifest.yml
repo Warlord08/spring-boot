@@ -1,0 +1,10 @@
+---
+applications:
+- name: boot-static
+  memory: 512M
+  instances: 1
+  host: boot-static
+  domain: cfapps.io
+  command: .java/bin/java -cp . -XX:OnOutOfMemoryError=./.buildpack-diagnostics/killjava -Xss1M org.springframework.boot.loader.WarLauncher --server.port=$PORT
+  path: target/spring-boot-sample-web-static-0.5.0.BUILD-SNAPSHOT.war
+  buildpack: https://github.com/cloudfoundry/java-buildpack

@@ -1,0 +1,77 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spring-boot-sample-batch 0.5.0.BUILD-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ spring-boot-sample-batch ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-batch/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ spring-boot-sample-batch ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-batch/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ spring-boot-sample-batch ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-batch/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ spring-boot-sample-batch ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-batch/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.15:test (default-test) @ spring-boot-sample-batch ---
+[INFO] Surefire report directory: /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-batch/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.springframework.boot.sample.batch.SampleBatchApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.083 sec - in org.springframework.boot.sample.batch.SampleBatchApplicationTests
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ spring-boot-sample-batch ---
+[INFO] Building jar: /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-batch/target/spring-boot-sample-batch-0.5.0.BUILD-SNAPSHOT.jar
+[INFO] META-INF/maven/org.springframework.boot/spring-boot-sample-batch/pom.xml already added, skipping
+[INFO] META-INF/maven/org.springframework.boot/spring-boot-sample-batch/pom.properties already added, skipping
+[INFO] 
+[INFO] --- maven-javadoc-plugin:2.9:jar (attach-javadocs) @ spring-boot-sample-batch ---
+[INFO] 
+Loading source files for package org.springframework.boot.sample.batch...
+Constructing Javadoc information...
+Standard Doclet version 1.6.0_24
+Building tree for all the packages and classes...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-batch/target/apidocs/org/springframework/boot/sample/batch/SampleBatchApplication.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-batch/target/apidocs/org/springframework/boot/sample/batch/package-frame.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-batch/target/apidocs/org/springframework/boot/sample/batch/package-summary.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-batch/target/apidocs/org/springframework/boot/sample/batch/package-tree.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-batch/target/apidocs/constant-values.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-batch/target/apidocs/org/springframework/boot/sample/batch/class-use/SampleBatchApplication.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-batch/target/apidocs/org/springframework/boot/sample/batch/package-use.html...
+Building index for all the packages and classes...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-batch/target/apidocs/overview-tree.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-batch/target/apidocs/index-all.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-batch/target/apidocs/deprecated-list.html...
+Building index for all classes...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-batch/target/apidocs/allclasses-frame.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-batch/target/apidocs/allclasses-noframe.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-batch/target/apidocs/index.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-batch/target/apidocs/help-doc.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-batch/target/apidocs/stylesheet.css...
+[INFO] Building jar: /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-batch/target/spring-boot-sample-batch-0.5.0.BUILD-SNAPSHOT-javadoc.jar
+[INFO] 
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ spring-boot-sample-batch ---
+[INFO] Building jar: /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-batch/target/spring-boot-sample-batch-0.5.0.BUILD-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:0.5.0.BUILD-SNAPSHOT:repackage (default) @ spring-boot-sample-batch ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8.005s
+[INFO] Finished at: Fri Aug 02 11:36:51 BST 2013
+[INFO] Final Memory: 18M/187M
+[INFO] ------------------------------------------------------------------------

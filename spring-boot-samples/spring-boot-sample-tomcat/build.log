@@ -1,0 +1,149 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spring-boot-sample-tomcat 0.5.0.BUILD-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ spring-boot-sample-tomcat ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ spring-boot-sample-tomcat ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-tomcat/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ spring-boot-sample-tomcat ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-tomcat/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ spring-boot-sample-tomcat ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-tomcat/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.15:test (default-test) @ spring-boot-sample-tomcat ---
+[INFO] Surefire report directory: /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-tomcat/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.springframework.boot.sample.tomcat.SampleTomcatApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::   v0.5.0.BUILD.SNAPSHOT
+
+2013-08-02 11:36:29.938  INFO 24664 --- [pool-1-thread-1] o.s.boot.SpringApplication               : Starting application on dsyer with PID 24664 (/home/dsyer/dev/bootstrap/boot/spring-boot-integration-tests/target/local-repo/org/springframework/boot/spring-boot/0.5.0.BUILD-SNAPSHOT/spring-boot-0.5.0.BUILD-SNAPSHOT.jar started by dsyer)
+2013-08-02 11:36:29.972  INFO 24664 --- [pool-1-thread-1] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@45490eb5: startup date [Fri Aug 02 11:36:29 BST 2013]; root of context hierarchy
+2013-08-02 11:36:30.794  INFO 24664 --- [pool-1-thread-1] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2013-08-02 11:36:30.794  INFO 24664 --- [pool-1-thread-1] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/7.0.42
+2013-08-02 11:36:30.852  INFO 24664 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2013-08-02 11:36:30.852  INFO 24664 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 883 ms
+2013-08-02 11:36:30.989  INFO 24664 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2013-08-02 11:36:30.990  INFO 24664 --- [ost-startStop-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2013-08-02 11:36:31.029  WARN 24664 --- [ost-startStop-1] o.s.w.s.r.ResourceHttpRequestHandler     : Locations list is empty. No resources will be served
+2013-08-02 11:36:31.046  INFO 24664 --- [ost-startStop-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2013-08-02 11:36:31.172  INFO 24664 --- [ost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String org.springframework.boot.sample.tomcat.web.SampleController.helloWorld()
+2013-08-02 11:36:31.204  INFO 24664 --- [ost-startStop-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2013-08-02 11:36:31.205  INFO 24664 --- [ost-startStop-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2013-08-02 11:36:31.209  INFO 24664 --- [ost-startStop-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2013-08-02 11:36:31.396  INFO 24664 --- [ost-startStop-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 405 ms
+2013-08-02 11:36:31.615  INFO 24664 --- [           main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@45490eb5: startup date [Fri Aug 02 11:36:29 BST 2013]; root of context hierarchy
+2013-08-02 11:36:31.616  INFO 24664 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@40f892a4: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,sampleTomcatApplication,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,nonAutoConfigurationSampleTomcatApplicationTests.NonAutoConfigurationSampleTomcatApplication,helloWorldService,sampleController,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat,tomcatEmbeddedServletContainerFactory,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$DispatcherServletConfiguration,dispatcherServlet,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration,embeddedServletContainerCustomizerBeanPostProcessor,org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration,faviconHandlerMapping,faviconRequestHandler,org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration,requestMappingHandlerMapping,mvcContentNegotiationManager,viewControllerHandlerMapping,beanNameHandlerMapping,resourceHandlerMapping,defaultServletHandlerMapping,requestMappingHandlerAdapter,mvcConversionService,mvcValidator,httpRequestHandlerAdapter,simpleControllerHandlerAdapter,handlerExceptionResolver,org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter,org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration,hiddenHttpMethodFilter,org.springframework.boot.autoconfigure.PropertyPlaceholderAutoConfiguration,propertySourcesPlaceholderConfigurer,org.springframework.boot.autoconfigure.MessageSourceAutoConfiguration,messageSource,org.springframework.boot.autoconfigure.web.ServerPropertiesAutoConfiguration,org.springframework.boot.context.embedded.properties.ServerProperties,propertySourcesBinder]; root of factory hierarchy
+2013-08-02 11:36:31.669  INFO 24664 --- [           main] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.19 sec - in org.springframework.boot.sample.tomcat.SampleTomcatApplicationTests
+Running org.springframework.boot.sample.tomcat.NonAutoConfigurationSampleTomcatApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::   v0.5.0.BUILD.SNAPSHOT
+
+2013-08-02 11:36:31.777  INFO 24664 --- [pool-2-thread-1] o.s.boot.SpringApplication               : Starting application on dsyer with PID 24664 (/home/dsyer/dev/bootstrap/boot/spring-boot-integration-tests/target/local-repo/org/springframework/boot/spring-boot/0.5.0.BUILD-SNAPSHOT/spring-boot-0.5.0.BUILD-SNAPSHOT.jar started by dsyer)
+2013-08-02 11:36:31.778  INFO 24664 --- [pool-2-thread-1] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e913c56: startup date [Fri Aug 02 11:36:31 BST 2013]; root of context hierarchy
+2013-08-02 11:36:31.860  INFO 24664 --- [pool-2-thread-1] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2013-08-02 11:36:31.861  INFO 24664 --- [pool-2-thread-1] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/7.0.42
+2013-08-02 11:36:31.864  INFO 24664 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2013-08-02 11:36:31.864  INFO 24664 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 86 ms
+2013-08-02 11:36:31.887  INFO 24664 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2013-08-02 11:36:31.887  INFO 24664 --- [ost-startStop-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2013-08-02 11:36:31.892  WARN 24664 --- [ost-startStop-1] o.s.w.s.r.ResourceHttpRequestHandler     : Locations list is empty. No resources will be served
+2013-08-02 11:36:31.901  INFO 24664 --- [ost-startStop-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2013-08-02 11:36:31.939  INFO 24664 --- [ost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String org.springframework.boot.sample.tomcat.web.SampleController.helloWorld()
+2013-08-02 11:36:31.953  INFO 24664 --- [ost-startStop-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2013-08-02 11:36:31.953  INFO 24664 --- [ost-startStop-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2013-08-02 11:36:31.955  INFO 24664 --- [ost-startStop-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2013-08-02 11:36:31.999  INFO 24664 --- [ost-startStop-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 112 ms
+2013-08-02 11:36:32.053  INFO 24664 --- [           main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e913c56: startup date [Fri Aug 02 11:36:31 BST 2013]; root of context hierarchy
+2013-08-02 11:36:32.064  INFO 24664 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@11a4ea4f: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,nonAutoConfigurationSampleTomcatApplicationTests.NonAutoConfigurationSampleTomcatApplication,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,sampleController,helloWorldService,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat,tomcatEmbeddedServletContainerFactory,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$DispatcherServletConfiguration,dispatcherServlet,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration,embeddedServletContainerCustomizerBeanPostProcessor,org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration,faviconHandlerMapping,faviconRequestHandler,org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration,handlerExceptionResolver,requestMappingHandlerMapping,mvcContentNegotiationManager,viewControllerHandlerMapping,beanNameHandlerMapping,resourceHandlerMapping,defaultServletHandlerMapping,requestMappingHandlerAdapter,mvcConversionService,mvcValidator,httpRequestHandlerAdapter,simpleControllerHandlerAdapter,org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter,org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration,hiddenHttpMethodFilter,org.springframework.boot.autoconfigure.PropertyPlaceholderAutoConfiguration,propertySourcesPlaceholderConfigurer]; root of factory hierarchy
+2013-08-02 11:36:32.067  INFO 24664 --- [           main] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.341 sec - in org.springframework.boot.sample.tomcat.NonAutoConfigurationSampleTomcatApplicationTests
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ spring-boot-sample-tomcat ---
+[INFO] Building jar: /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-tomcat/target/spring-boot-sample-tomcat-0.5.0.BUILD-SNAPSHOT.jar
+[INFO] META-INF/maven/org.springframework.boot/spring-boot-sample-tomcat/pom.xml already added, skipping
+[INFO] META-INF/maven/org.springframework.boot/spring-boot-sample-tomcat/pom.properties already added, skipping
+[INFO] 
+[INFO] --- maven-javadoc-plugin:2.9:jar (attach-javadocs) @ spring-boot-sample-tomcat ---
+[INFO] 
+Loading source files for package org.springframework.boot.sample.tomcat...
+Loading source files for package org.springframework.boot.sample.tomcat.service...
+Loading source files for package org.springframework.boot.sample.tomcat.web...
+Constructing Javadoc information...
+Standard Doclet version 1.6.0_24
+Building tree for all the packages and classes...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-tomcat/target/apidocs/org/springframework/boot/sample/tomcat/SampleTomcatApplication.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-tomcat/target/apidocs/org/springframework/boot/sample/tomcat/service/HelloWorldService.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-tomcat/target/apidocs/org/springframework/boot/sample/tomcat/web/SampleController.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-tomcat/target/apidocs/overview-frame.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-tomcat/target/apidocs/org/springframework/boot/sample/tomcat/package-frame.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-tomcat/target/apidocs/org/springframework/boot/sample/tomcat/package-summary.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-tomcat/target/apidocs/org/springframework/boot/sample/tomcat/package-tree.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-tomcat/target/apidocs/org/springframework/boot/sample/tomcat/service/package-frame.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-tomcat/target/apidocs/org/springframework/boot/sample/tomcat/service/package-summary.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-tomcat/target/apidocs/org/springframework/boot/sample/tomcat/service/package-tree.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-tomcat/target/apidocs/org/springframework/boot/sample/tomcat/web/package-frame.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-tomcat/target/apidocs/org/springframework/boot/sample/tomcat/web/package-summary.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-tomcat/target/apidocs/org/springframework/boot/sample/tomcat/web/package-tree.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-tomcat/target/apidocs/constant-values.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-tomcat/target/apidocs/org/springframework/boot/sample/tomcat/class-use/SampleTomcatApplication.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-tomcat/target/apidocs/org/springframework/boot/sample/tomcat/service/class-use/HelloWorldService.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-tomcat/target/apidocs/org/springframework/boot/sample/tomcat/web/class-use/SampleController.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-tomcat/target/apidocs/org/springframework/boot/sample/tomcat/package-use.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-tomcat/target/apidocs/org/springframework/boot/sample/tomcat/service/package-use.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-tomcat/target/apidocs/org/springframework/boot/sample/tomcat/web/package-use.html...
+Building index for all the packages and classes...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-tomcat/target/apidocs/overview-tree.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-tomcat/target/apidocs/index-all.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-tomcat/target/apidocs/deprecated-list.html...
+Building index for all classes...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-tomcat/target/apidocs/allclasses-frame.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-tomcat/target/apidocs/allclasses-noframe.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-tomcat/target/apidocs/index.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-tomcat/target/apidocs/overview-summary.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-tomcat/target/apidocs/help-doc.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-tomcat/target/apidocs/stylesheet.css...
+[INFO] Building jar: /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-tomcat/target/spring-boot-sample-tomcat-0.5.0.BUILD-SNAPSHOT-javadoc.jar
+[INFO] 
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ spring-boot-sample-tomcat ---
+[INFO] Building jar: /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-tomcat/target/spring-boot-sample-tomcat-0.5.0.BUILD-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:0.5.0.BUILD-SNAPSHOT:repackage (default) @ spring-boot-sample-tomcat ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8.861s
+[INFO] Finished at: Fri Aug 02 11:36:34 BST 2013
+[INFO] Final Memory: 21M/336M
+[INFO] ------------------------------------------------------------------------

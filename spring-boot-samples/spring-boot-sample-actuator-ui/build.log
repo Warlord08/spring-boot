@@ -1,0 +1,963 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spring-boot-sample-actuator-ui 0.5.0.BUILD-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ spring-boot-sample-actuator-ui ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ spring-boot-sample-actuator-ui ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator-ui/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ spring-boot-sample-actuator-ui ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator-ui/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ spring-boot-sample-actuator-ui ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator-ui/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.15:test (default-test) @ spring-boot-sample-actuator-ui ---
+[INFO] Surefire report directory: /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator-ui/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.springframework.boot.sample.ops.ui.SampleActuatorUiApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::   v0.5.0.BUILD.SNAPSHOT
+
+2013-08-02 11:34:59.062  INFO 23122 --- [pool-1-thread-1] o.s.boot.SpringApplication               : Starting application on dsyer with PID 23122 (/home/dsyer/dev/bootstrap/boot/spring-boot-integration-tests/target/local-repo/org/springframework/boot/spring-boot/0.5.0.BUILD-SNAPSHOT/spring-boot-0.5.0.BUILD-SNAPSHOT.jar started by dsyer)
+2013-08-02 11:34:59.098  INFO 23122 --- [pool-1-thread-1] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6983d95: startup date [Fri Aug 02 11:34:59 BST 2013]; root of context hierarchy
+2013-08-02 11:34:59.674  INFO 23122 --- [pool-1-thread-1] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'propertySourcesBinder': replacing [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2013-08-02 11:34:59.797  INFO 23122 --- [pool-1-thread-1] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'propertySourcesBinder': replacing [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2013-08-02 11:35:00.477  INFO 23122 --- [pool-1-thread-1] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2013-08-02 11:35:00.477  INFO 23122 --- [pool-1-thread-1] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/7.0.42
+2013-08-02 11:35:00.555  INFO 23122 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2013-08-02 11:35:00.556  INFO 23122 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1460 ms
+2013-08-02 11:35:01.122  INFO 23122 --- [ost-startStop-1] o.s.b.o.e.mvc.EndpointHandlerMapping     : Mapped URL path [/env] onto handler of type [class org.springframework.boot.ops.endpoint.EnvironmentEndpoint]
+2013-08-02 11:35:01.122  INFO 23122 --- [ost-startStop-1] o.s.b.o.e.mvc.EndpointHandlerMapping     : Mapped URL path [/health] onto handler of type [class org.springframework.boot.ops.endpoint.HealthEndpoint]
+2013-08-02 11:35:01.122  INFO 23122 --- [ost-startStop-1] o.s.b.o.e.mvc.EndpointHandlerMapping     : Mapped URL path [/beans] onto handler of type [class org.springframework.boot.ops.endpoint.BeansEndpoint]
+2013-08-02 11:35:01.122  INFO 23122 --- [ost-startStop-1] o.s.b.o.e.mvc.EndpointHandlerMapping     : Mapped URL path [/info] onto handler of type [class org.springframework.boot.ops.endpoint.InfoEndpoint]
+2013-08-02 11:35:01.122  INFO 23122 --- [ost-startStop-1] o.s.b.o.e.mvc.EndpointHandlerMapping     : Mapped URL path [/metrics] onto handler of type [class org.springframework.boot.ops.endpoint.MetricsEndpoint]
+2013-08-02 11:35:01.122  INFO 23122 --- [ost-startStop-1] o.s.b.o.e.mvc.EndpointHandlerMapping     : Mapped URL path [/trace] onto handler of type [class org.springframework.boot.ops.endpoint.TraceEndpoint]
+2013-08-02 11:35:01.122  INFO 23122 --- [ost-startStop-1] o.s.b.o.e.mvc.EndpointHandlerMapping     : Mapped URL path [/dump] onto handler of type [class org.springframework.boot.ops.endpoint.DumpEndpoint]
+2013-08-02 11:35:01.123  INFO 23122 --- [ost-startStop-1] o.s.b.o.e.mvc.EndpointHandlerMapping     : Mapped URL path [/shutdown] onto handler of type [class org.springframework.boot.ops.endpoint.ShutdownEndpoint]
+2013-08-02 11:35:01.200  INFO 23122 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2013-08-02 11:35:01.200  INFO 23122 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/js/**'], []
+2013-08-02 11:35:01.200  INFO 23122 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/images/**'], []
+2013-08-02 11:35:01.200  INFO 23122 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/**/favicon.ico'], []
+2013-08-02 11:35:01.201  INFO 23122 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/health'], []
+2013-08-02 11:35:01.201  INFO 23122 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/error'], []
+2013-08-02 11:35:01.236  INFO 23122 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.config.annotation.web.builders.HttpSecurity$OrRequestMatcher@2364de59, [org.springframework.security.web.context.SecurityContextPersistenceFilter@3341b736, org.springframework.security.web.authentication.logout.LogoutFilter@1f635484, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3241b635, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78216b59, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5a0eddac, org.springframework.security.web.session.SessionManagementFilter@5fb7565, org.springframework.security.web.access.ExceptionTranslationFilter@3fd83cf4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@d89d7eb]
+2013-08-02 11:35:01.419  INFO 23122 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2013-08-02 11:35:01.419  INFO 23122 --- [ost-startStop-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2013-08-02 11:35:01.440  WARN 23122 --- [ost-startStop-1] o.s.w.s.r.ResourceHttpRequestHandler     : Locations list is empty. No resources will be served
+2013-08-02 11:35:01.450  INFO 23122 --- [ost-startStop-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2013-08-02 11:35:01.570  INFO 23122 --- [ost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String org.springframework.boot.sample.ops.ui.SampleActuatorUiApplication.home(java.util.Map<java.lang.String, java.lang.Object>)
+2013-08-02 11:35:01.578  INFO 23122 --- [ost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.ops.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2013-08-02 11:35:01.580  INFO 23122 --- [ost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[text/html],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.ops.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2013-08-02 11:35:01.614  INFO 23122 --- [ost-startStop-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2013-08-02 11:35:01.614  INFO 23122 --- [ost-startStop-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2013-08-02 11:35:01.621  INFO 23122 --- [ost-startStop-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2013-08-02 11:35:01.881  INFO 23122 --- [ost-startStop-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 462 ms
+2013-08-02 11:35:02.211  INFO 23122 --- [nio-8080-exec-3] org.thymeleaf.TemplateEngine             : [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2013-08-02 11:35:02.278  INFO 23122 --- [nio-8080-exec-3] o.t.t.AbstractTemplateResolver           : [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.templateresolver.TemplateResolver
+2013-08-02 11:35:02.278  INFO 23122 --- [nio-8080-exec-3] o.t.t.AbstractTemplateResolver           : [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2013-08-02 11:35:02.279  INFO 23122 --- [nio-8080-exec-3] o.t.m.AbstractMessageResolver            : [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring3.messageresolver.SpringMessageResolver
+2013-08-02 11:35:02.280  INFO 23122 --- [nio-8080-exec-3] o.t.m.AbstractMessageResolver            : [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2013-08-02 11:35:02.285  INFO 23122 --- [nio-8080-exec-3] org.thymeleaf.TemplateEngine.CONFIG      : [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * XML
+[THYMELEAF]     * HTML5
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.templateresolver.TemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring3.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect: org.thymeleaf.spring3.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2013-08-02 11:35:02.286  INFO 23122 --- [nio-8080-exec-3] org.thymeleaf.TemplateEngine             : [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2013-08-02 11:35:02.425  WARN 23122 --- [nio-8080-exec-7] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [messages] not found for MessageSource: Can't find bundle for base name messages, locale en_GB
+2013-08-02 11:35:02.427  INFO 23122 --- [nio-8080-exec-7] o.s.b.ops.audit.listener.AuditListener   : AuditEvent [timestamp=Fri Aug 02 11:35:02 BST 2013, principal=<unknown>, type=AUTHENTICATION_FAILURE, data={message=An Authentication object was not found in the SecurityContext, type=org.springframework.security.authentication.AuthenticationCredentialsNotFoundException}]
+2013-08-02 11:35:02.457  WARN 23122 --- [           main] o.s.web.client.RestTemplate              : GET request for "http://localhost:8080/metrics" resulted in 401 (Unauthorized); invoking error handler
+2013-08-02 11:35:02.469  INFO 23122 --- [           main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6983d95: startup date [Fri Aug 02 11:34:59 BST 2013]; root of context hierarchy
+2013-08-02 11:35:02.470  INFO 23122 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@19c8ef56: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,sampleActuatorUiApplication,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,securityProperties,org.springframework.boot.autoconfigure.MessageSourceAutoConfiguration,messageSource,org.springframework.boot.autoconfigure.PropertyPlaceholderAutoConfiguration,propertySourcesPlaceholderConfigurer,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat,tomcatEmbeddedServletContainerFactory,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$DispatcherServletConfiguration,dispatcherServlet,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration,embeddedServletContainerCustomizerBeanPostProcessor,org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration,faviconHandlerMapping,faviconRequestHandler,org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration,requestMappingHandlerMapping,mvcContentNegotiationManager,viewControllerHandlerMapping,beanNameHandlerMapping,resourceHandlerMapping,defaultServletHandlerMapping,requestMappingHandlerAdapter,mvcConversionService,mvcValidator,httpRequestHandlerAdapter,simpleControllerHandlerAdapter,handlerExceptionResolver,org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter,org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration,hiddenHttpMethodFilter,org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration,org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration,org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$ThymeleafViewResolverConfiguration,thymeleafViewResolver,org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$ThymeleafDefaultConfiguration,templateEngine,org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration,defaultTemplateResolver,org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration,org.springframework.boot.autoconfigure.web.ServerPropertiesAutoConfiguration,org.springframework.boot.context.embedded.properties.ServerProperties,propertySourcesBinder,org.springframework.boot.ops.autoconfigure.AuditAutoConfiguration$AuditEventRepositoryConfiguration,auditEventRepository,org.springframework.boot.ops.autoconfigure.AuditAutoConfiguration,auditListener,authenticationAuditListener,authorizationAuditListener,org.springframework.boot.ops.autoconfigure.EndpointAutoConfiguration$InfoPropertiesConfiguration,org.springframework.boot.ops.autoconfigure.EndpointAutoConfiguration,environmentEndpoint,healthEndpoint,beansEndpoint,infoEndpoint,metricsEndpoint,traceEndpoint,dumpEndpoint,shutdownEndpoint,org.springframework.boot.ops.autoconfigure.ManagementServerPropertiesAutoConfiguration,org.springframework.actuate.properties.ManagementServerProperties,org.springframework.boot.ops.autoconfigure.EndpointWebMvcAutoConfiguration,endpointHandlerMapping,endpointHandlerAdapter,org.springframework.boot.ops.autoconfigure.ErrorMvcAutoConfiguration,basicErrorController,org.springframework.boot.ops.autoconfigure.MetricRepositoryAutoConfiguration,counterService,gaugeService,metricRepository,org.springframework.boot.ops.autoconfigure.MetricFilterAutoConfiguration,metricFilter,org.springframework.boot.ops.autoconfigure.SecurityAutoConfiguration$AuthenticationManagerConfiguration,authenticationManager,org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration,webSecurityExpressionHandler,springSecurityFilterChain,privilegeEvaluator,org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration,objectPostProcessor,org.springframework.boot.ops.autoconfigure.SecurityAutoConfiguration,authenticationEventPublisher,webSecurityConfigurerAdapter,org.springframework.boot.ops.autoconfigure.TraceRepositoryAutoConfiguration,traceRepository,org.springframework.boot.ops.autoconfigure.TraceWebFilterAutoConfiguration,webRequestLoggingFilter]; root of factory hierarchy
+2013-08-02 11:35:02.524  INFO 23122 --- [           main] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.948 sec - in org.springframework.boot.sample.ops.ui.SampleActuatorUiApplicationTests
+Running org.springframework.boot.sample.ops.ui.SampleActuatorUiApplicationPortTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::   v0.5.0.BUILD.SNAPSHOT
+
+2013-08-02 11:35:02.619  INFO 23122 --- [pool-2-thread-1] o.s.boot.SpringApplication               : Starting application on dsyer with PID 23122 (/home/dsyer/dev/bootstrap/boot/spring-boot-integration-tests/target/local-repo/org/springframework/boot/spring-boot/0.5.0.BUILD-SNAPSHOT/spring-boot-0.5.0.BUILD-SNAPSHOT.jar started by dsyer)
+2013-08-02 11:35:02.620  INFO 23122 --- [pool-2-thread-1] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a6e10d8: startup date [Fri Aug 02 11:35:02 BST 2013]; root of context hierarchy
+2013-08-02 11:35:02.950  INFO 23122 --- [pool-2-thread-1] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'propertySourcesBinder': replacing [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2013-08-02 11:35:03.050  INFO 23122 --- [pool-2-thread-1] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'propertySourcesBinder': replacing [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2013-08-02 11:35:03.106  INFO 23122 --- [pool-2-thread-1] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2013-08-02 11:35:03.106  INFO 23122 --- [pool-2-thread-1] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/7.0.42
+2013-08-02 11:35:03.109  INFO 23122 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2013-08-02 11:35:03.110  INFO 23122 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 490 ms
+2013-08-02 11:35:03.420  INFO 23122 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2013-08-02 11:35:03.420  INFO 23122 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/js/**'], []
+2013-08-02 11:35:03.421  INFO 23122 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/images/**'], []
+2013-08-02 11:35:03.421  INFO 23122 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/**/favicon.ico'], []
+2013-08-02 11:35:03.422  INFO 23122 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/health'], []
+2013-08-02 11:35:03.422  INFO 23122 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/error'], []
+2013-08-02 11:35:03.424  INFO 23122 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.config.annotation.web.builders.HttpSecurity$OrRequestMatcher@5c68b20, [org.springframework.security.web.context.SecurityContextPersistenceFilter@2dd7e4d6, org.springframework.security.web.authentication.logout.LogoutFilter@38f0b51d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4302a01f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@615e7597, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7a3e72, org.springframework.security.web.session.SessionManagementFilter@5999ae9c, org.springframework.security.web.access.ExceptionTranslationFilter@7896b1b8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6d6de4e1]
+2013-08-02 11:35:03.435  INFO 23122 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2013-08-02 11:35:03.436  INFO 23122 --- [ost-startStop-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2013-08-02 11:35:03.441  WARN 23122 --- [ost-startStop-1] o.s.w.s.r.ResourceHttpRequestHandler     : Locations list is empty. No resources will be served
+2013-08-02 11:35:03.444  INFO 23122 --- [ost-startStop-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2013-08-02 11:35:03.470  INFO 23122 --- [ost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String org.springframework.boot.sample.ops.ui.SampleActuatorUiApplication.home(java.util.Map<java.lang.String, java.lang.Object>)
+2013-08-02 11:35:03.476  INFO 23122 --- [ost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.ops.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2013-08-02 11:35:03.477  INFO 23122 --- [ost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[text/html],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.ops.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2013-08-02 11:35:03.493  INFO 23122 --- [ost-startStop-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2013-08-02 11:35:03.493  INFO 23122 --- [ost-startStop-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2013-08-02 11:35:03.495  INFO 23122 --- [ost-startStop-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2013-08-02 11:35:03.560  INFO 23122 --- [ost-startStop-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 124 ms
+2013-08-02 11:35:03.579  INFO 23122 --- [pool-2-thread-1] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@49c68e73: startup date [Fri Aug 02 11:35:03 BST 2013]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a6e10d8
+2013-08-02 11:35:03.611  INFO 23122 --- [pool-2-thread-1] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2013-08-02 11:35:03.612  INFO 23122 --- [pool-2-thread-1] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/7.0.42
+2013-08-02 11:35:03.614  INFO 23122 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2013-08-02 11:35:03.615  INFO 23122 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 36 ms
+2013-08-02 11:35:03.634  INFO 23122 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2013-08-02 11:35:03.634  INFO 23122 --- [ost-startStop-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2013-08-02 11:35:03.637  INFO 23122 --- [ost-startStop-1] o.s.b.o.e.mvc.EndpointHandlerMapping     : Mapped URL path [/env] onto handler of type [class org.springframework.boot.ops.endpoint.EnvironmentEndpoint]
+2013-08-02 11:35:03.637  INFO 23122 --- [ost-startStop-1] o.s.b.o.e.mvc.EndpointHandlerMapping     : Mapped URL path [/health] onto handler of type [class org.springframework.boot.ops.endpoint.HealthEndpoint]
+2013-08-02 11:35:03.638  INFO 23122 --- [ost-startStop-1] o.s.b.o.e.mvc.EndpointHandlerMapping     : Mapped URL path [/beans] onto handler of type [class org.springframework.boot.ops.endpoint.BeansEndpoint]
+2013-08-02 11:35:03.638  INFO 23122 --- [ost-startStop-1] o.s.b.o.e.mvc.EndpointHandlerMapping     : Mapped URL path [/info] onto handler of type [class org.springframework.boot.ops.endpoint.InfoEndpoint]
+2013-08-02 11:35:03.638  INFO 23122 --- [ost-startStop-1] o.s.b.o.e.mvc.EndpointHandlerMapping     : Mapped URL path [/metrics] onto handler of type [class org.springframework.boot.ops.endpoint.MetricsEndpoint]
+2013-08-02 11:35:03.638  INFO 23122 --- [ost-startStop-1] o.s.b.o.e.mvc.EndpointHandlerMapping     : Mapped URL path [/trace] onto handler of type [class org.springframework.boot.ops.endpoint.TraceEndpoint]
+2013-08-02 11:35:03.638  INFO 23122 --- [ost-startStop-1] o.s.b.o.e.mvc.EndpointHandlerMapping     : Mapped URL path [/dump] onto handler of type [class org.springframework.boot.ops.endpoint.DumpEndpoint]
+2013-08-02 11:35:03.638  INFO 23122 --- [ost-startStop-1] o.s.b.o.e.mvc.EndpointHandlerMapping     : Mapped URL path [/shutdown] onto handler of type [class org.springframework.boot.ops.endpoint.ShutdownEndpoint]
+2013-08-02 11:35:03.658  INFO 23122 --- [ost-startStop-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2013-08-02 11:35:03.683  INFO 23122 --- [nio-9010-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2013-08-02 11:35:03.687  INFO 23122 --- [nio-9010-exec-1] o.t.t.AbstractTemplateResolver           : [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.templateresolver.TemplateResolver
+2013-08-02 11:35:03.687  INFO 23122 --- [nio-9010-exec-1] o.t.t.AbstractTemplateResolver           : [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2013-08-02 11:35:03.688  INFO 23122 --- [nio-9010-exec-1] o.t.m.AbstractMessageResolver            : [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring3.messageresolver.SpringMessageResolver
+2013-08-02 11:35:03.688  INFO 23122 --- [nio-9010-exec-1] o.t.m.AbstractMessageResolver            : [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2013-08-02 11:35:03.689  INFO 23122 --- [nio-9010-exec-1] org.thymeleaf.TemplateEngine.CONFIG      : [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * XML
+[THYMELEAF]     * HTML5
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.templateresolver.TemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring3.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect: org.thymeleaf.spring3.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2013-08-02 11:35:03.689  INFO 23122 --- [nio-9010-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2013-08-02 11:35:03.717  INFO 23122 --- [           main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a6e10d8: startup date [Fri Aug 02 11:35:02 BST 2013]; root of context hierarchy
+2013-08-02 11:35:03.718  INFO 23122 --- [           main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@49c68e73: startup date [Fri Aug 02 11:35:03 BST 2013]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a6e10d8
+2013-08-02 11:35:03.718  INFO 23122 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5df9aeda: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,endpointWebMvcChildContextConfiguration,propertyPlaceholderAutoConfiguration,embeddedServletContainerAutoConfiguration,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,org.springframework.boot.ops.autoconfigure.EndpointWebMvcChildContextConfiguration$EndpointWebMvcChildContextSecurityConfiguration,springSecurityFilterChain,dispatcherServlet,handlerMapping,handlerAdapter,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat,tomcatEmbeddedServletContainerFactory,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$DispatcherServletConfiguration,embeddedServletContainerCustomizerBeanPostProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@35d22ddb
+2013-08-02 11:35:03.734  INFO 23122 --- [           main] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+2013-08-02 11:35:03.743  INFO 23122 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@35d22ddb: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,sampleActuatorUiApplication,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,securityProperties,org.springframework.boot.autoconfigure.MessageSourceAutoConfiguration,messageSource,org.springframework.boot.autoconfigure.PropertyPlaceholderAutoConfiguration,propertySourcesPlaceholderConfigurer,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat,tomcatEmbeddedServletContainerFactory,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$DispatcherServletConfiguration,dispatcherServlet,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration,embeddedServletContainerCustomizerBeanPostProcessor,org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration,faviconHandlerMapping,faviconRequestHandler,org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration,requestMappingHandlerMapping,mvcContentNegotiationManager,viewControllerHandlerMapping,beanNameHandlerMapping,resourceHandlerMapping,defaultServletHandlerMapping,requestMappingHandlerAdapter,mvcConversionService,mvcValidator,httpRequestHandlerAdapter,simpleControllerHandlerAdapter,handlerExceptionResolver,org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter,org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration,hiddenHttpMethodFilter,org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration,org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration,org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$ThymeleafViewResolverConfiguration,thymeleafViewResolver,org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$ThymeleafDefaultConfiguration,templateEngine,org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration,defaultTemplateResolver,org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration,org.springframework.boot.autoconfigure.web.ServerPropertiesAutoConfiguration,org.springframework.boot.context.embedded.properties.ServerProperties,propertySourcesBinder,org.springframework.boot.ops.autoconfigure.AuditAutoConfiguration$AuditEventRepositoryConfiguration,auditEventRepository,org.springframework.boot.ops.autoconfigure.AuditAutoConfiguration,auditListener,authenticationAuditListener,authorizationAuditListener,org.springframework.boot.ops.autoconfigure.EndpointAutoConfiguration$InfoPropertiesConfiguration,org.springframework.boot.ops.autoconfigure.EndpointAutoConfiguration,environmentEndpoint,healthEndpoint,beansEndpoint,infoEndpoint,metricsEndpoint,traceEndpoint,dumpEndpoint,shutdownEndpoint,org.springframework.boot.ops.autoconfigure.ManagementServerPropertiesAutoConfiguration,org.springframework.actuate.properties.ManagementServerProperties,org.springframework.boot.ops.autoconfigure.EndpointWebMvcAutoConfiguration,endpointHandlerMapping,endpointHandlerAdapter,org.springframework.boot.ops.autoconfigure.ErrorMvcAutoConfiguration,basicErrorController,org.springframework.boot.ops.autoconfigure.MetricRepositoryAutoConfiguration,counterService,gaugeService,metricRepository,org.springframework.boot.ops.autoconfigure.MetricFilterAutoConfiguration,metricFilter,org.springframework.boot.ops.autoconfigure.SecurityAutoConfiguration$AuthenticationManagerConfiguration,authenticationManager,org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration,webSecurityExpressionHandler,springSecurityFilterChain,privilegeEvaluator,org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration,objectPostProcessor,org.springframework.boot.ops.autoconfigure.SecurityAutoConfiguration,authenticationEventPublisher,webSecurityConfigurerAdapter,org.springframework.boot.ops.autoconfigure.TraceRepositoryAutoConfiguration,traceRepository,org.springframework.boot.ops.autoconfigure.TraceWebFilterAutoConfiguration,webRequestLoggingFilter]; root of factory hierarchy
+2013-08-02 11:35:03.747  INFO 23122 --- [           main] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+2013-08-02 11:35:03.754  WARN 23122 --- [ost-startStop-1] o.a.catalina.util.LifecycleMBeanBase     : Failed to unregister MBean with name [Tomcat:j2eeType=Servlet,name=default,WebModule=//localhost/,J2EEApplication=none,J2EEServer=none] during component destruction
+
+javax.management.InstanceNotFoundException: Tomcat:j2eeType=Servlet,name=default,WebModule=//localhost/,J2EEApplication=none,J2EEServer=none
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1118)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.exclusiveUnregisterMBean(DefaultMBeanServerInterceptor.java:433)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.unregisterMBean(DefaultMBeanServerInterceptor.java:421)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.unregisterMBean(JmxMBeanServer.java:540)
+	at org.apache.catalina.util.LifecycleMBeanBase.unregister(LifecycleMBeanBase.java:194)
+	at org.apache.catalina.util.LifecycleMBeanBase.destroyInternal(LifecycleMBeanBase.java:73)
+	at org.apache.catalina.core.ContainerBase.destroyInternal(ContainerBase.java:1247)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:1041)
+	at org.apache.catalina.core.StandardContext.removeChild(StandardContext.java:4068)
+	at org.apache.catalina.core.StandardContext.resetContext(StandardContext.java:5749)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5692)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1575)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1564)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:679)
+
+2013-08-02 11:35:03.755  WARN 23122 --- [ost-startStop-1] o.a.catalina.util.LifecycleMBeanBase     : Failed to unregister MBean with name [Tomcat:j2eeType=Servlet,name=dispatcherServlet,WebModule=//localhost/,J2EEApplication=none,J2EEServer=none] during component destruction
+
+javax.management.InstanceNotFoundException: Tomcat:j2eeType=Servlet,name=dispatcherServlet,WebModule=//localhost/,J2EEApplication=none,J2EEServer=none
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1118)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.exclusiveUnregisterMBean(DefaultMBeanServerInterceptor.java:433)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.unregisterMBean(DefaultMBeanServerInterceptor.java:421)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.unregisterMBean(JmxMBeanServer.java:540)
+	at org.apache.catalina.util.LifecycleMBeanBase.unregister(LifecycleMBeanBase.java:194)
+	at org.apache.catalina.util.LifecycleMBeanBase.destroyInternal(LifecycleMBeanBase.java:73)
+	at org.apache.catalina.core.ContainerBase.destroyInternal(ContainerBase.java:1247)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:1041)
+	at org.apache.catalina.core.StandardContext.removeChild(StandardContext.java:4068)
+	at org.apache.catalina.core.StandardContext.resetContext(StandardContext.java:5749)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5692)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1575)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1564)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:679)
+
+2013-08-02 11:35:03.757  WARN 23122 --- [           main] o.a.catalina.util.LifecycleMBeanBase     : Failed to unregister MBean with name [Tomcat:type=Realm,realmPath=/realm0] during component destruction
+
+javax.management.InstanceNotFoundException: Tomcat:type=Realm,realmPath=/realm0
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1118)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.exclusiveUnregisterMBean(DefaultMBeanServerInterceptor.java:433)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.unregisterMBean(DefaultMBeanServerInterceptor.java:421)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.unregisterMBean(JmxMBeanServer.java:540)
+	at org.apache.catalina.util.LifecycleMBeanBase.unregister(LifecycleMBeanBase.java:194)
+	at org.apache.catalina.util.LifecycleMBeanBase.destroyInternal(LifecycleMBeanBase.java:73)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.ContainerBase.destroyInternal(ContainerBase.java:1218)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.StandardService.destroyInternal(StandardService.java:593)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.StandardServer.destroyInternal(StandardServer.java:822)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.startup.Tomcat.destroy(Tomcat.java:355)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.stop(TomcatEmbeddedServletContainer.java:97)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.stopAndReleaseEmbeddedServletContainer(EmbeddedWebApplicationContext.java:330)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.doClose(EmbeddedWebApplicationContext.java:132)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1013)
+	at org.springframework.boot.sample.ops.ui.SampleActuatorUiApplicationPortTests.stop(SampleActuatorUiApplicationPortTests.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+2013-08-02 11:35:03.758  WARN 23122 --- [           main] o.a.catalina.util.LifecycleMBeanBase     : Failed to unregister MBean with name [Tomcat:type=Valve,name=StandardEngineValve] during component destruction
+
+javax.management.InstanceNotFoundException: Tomcat:type=Valve,name=StandardEngineValve
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1118)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.exclusiveUnregisterMBean(DefaultMBeanServerInterceptor.java:433)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.unregisterMBean(DefaultMBeanServerInterceptor.java:421)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.unregisterMBean(JmxMBeanServer.java:540)
+	at org.apache.catalina.util.LifecycleMBeanBase.unregister(LifecycleMBeanBase.java:194)
+	at org.apache.catalina.util.LifecycleMBeanBase.destroyInternal(LifecycleMBeanBase.java:73)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.StandardPipeline.removeValve(StandardPipeline.java:460)
+	at org.apache.catalina.core.StandardPipeline.destroyInternal(StandardPipeline.java:222)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.ContainerBase.destroyInternal(ContainerBase.java:1229)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.StandardService.destroyInternal(StandardService.java:593)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.StandardServer.destroyInternal(StandardServer.java:822)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.startup.Tomcat.destroy(Tomcat.java:355)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.stop(TomcatEmbeddedServletContainer.java:97)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.stopAndReleaseEmbeddedServletContainer(EmbeddedWebApplicationContext.java:330)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.doClose(EmbeddedWebApplicationContext.java:132)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1013)
+	at org.springframework.boot.sample.ops.ui.SampleActuatorUiApplicationPortTests.stop(SampleActuatorUiApplicationPortTests.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+2013-08-02 11:35:03.760  WARN 23122 --- [           main] o.a.catalina.util.LifecycleMBeanBase     : Failed to unregister MBean with name [Tomcat:type=Valve,host=localhost,name=ErrorReportValve] during component destruction
+
+javax.management.InstanceNotFoundException: Tomcat:type=Valve,host=localhost,name=ErrorReportValve
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1118)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.exclusiveUnregisterMBean(DefaultMBeanServerInterceptor.java:433)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.unregisterMBean(DefaultMBeanServerInterceptor.java:421)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.unregisterMBean(JmxMBeanServer.java:540)
+	at org.apache.catalina.util.LifecycleMBeanBase.unregister(LifecycleMBeanBase.java:194)
+	at org.apache.catalina.util.LifecycleMBeanBase.destroyInternal(LifecycleMBeanBase.java:73)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.StandardPipeline.removeValve(StandardPipeline.java:460)
+	at org.apache.catalina.core.StandardPipeline.destroyInternal(StandardPipeline.java:222)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.ContainerBase.destroyInternal(ContainerBase.java:1229)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:1041)
+	at org.apache.catalina.core.ContainerBase.destroyInternal(ContainerBase.java:1234)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.StandardService.destroyInternal(StandardService.java:593)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.StandardServer.destroyInternal(StandardServer.java:822)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.startup.Tomcat.destroy(Tomcat.java:355)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.stop(TomcatEmbeddedServletContainer.java:97)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.stopAndReleaseEmbeddedServletContainer(EmbeddedWebApplicationContext.java:330)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.doClose(EmbeddedWebApplicationContext.java:132)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1013)
+	at org.springframework.boot.sample.ops.ui.SampleActuatorUiApplicationPortTests.stop(SampleActuatorUiApplicationPortTests.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+2013-08-02 11:35:03.761  WARN 23122 --- [           main] o.a.catalina.util.LifecycleMBeanBase     : Failed to unregister MBean with name [Tomcat:type=Valve,host=localhost,name=StandardHostValve] during component destruction
+
+javax.management.InstanceNotFoundException: Tomcat:type=Valve,host=localhost,name=StandardHostValve
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1118)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.exclusiveUnregisterMBean(DefaultMBeanServerInterceptor.java:433)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.unregisterMBean(DefaultMBeanServerInterceptor.java:421)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.unregisterMBean(JmxMBeanServer.java:540)
+	at org.apache.catalina.util.LifecycleMBeanBase.unregister(LifecycleMBeanBase.java:194)
+	at org.apache.catalina.util.LifecycleMBeanBase.destroyInternal(LifecycleMBeanBase.java:73)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.StandardPipeline.removeValve(StandardPipeline.java:460)
+	at org.apache.catalina.core.StandardPipeline.destroyInternal(StandardPipeline.java:222)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.ContainerBase.destroyInternal(ContainerBase.java:1229)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:1041)
+	at org.apache.catalina.core.ContainerBase.destroyInternal(ContainerBase.java:1234)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.StandardService.destroyInternal(StandardService.java:593)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.StandardServer.destroyInternal(StandardServer.java:822)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.startup.Tomcat.destroy(Tomcat.java:355)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.stop(TomcatEmbeddedServletContainer.java:97)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.stopAndReleaseEmbeddedServletContainer(EmbeddedWebApplicationContext.java:330)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.doClose(EmbeddedWebApplicationContext.java:132)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1013)
+	at org.springframework.boot.sample.ops.ui.SampleActuatorUiApplicationPortTests.stop(SampleActuatorUiApplicationPortTests.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+2013-08-02 11:35:03.763  WARN 23122 --- [           main] o.a.catalina.util.LifecycleMBeanBase     : Failed to unregister MBean with name [Tomcat:type=NamingResources,context=/,host=localhost] during component destruction
+
+javax.management.InstanceNotFoundException: Tomcat:type=NamingResources,context=/,host=localhost
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1118)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.exclusiveUnregisterMBean(DefaultMBeanServerInterceptor.java:433)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.unregisterMBean(DefaultMBeanServerInterceptor.java:421)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.unregisterMBean(JmxMBeanServer.java:540)
+	at org.apache.catalina.util.LifecycleMBeanBase.unregister(LifecycleMBeanBase.java:194)
+	at org.apache.catalina.util.LifecycleMBeanBase.destroyInternal(LifecycleMBeanBase.java:73)
+	at org.apache.catalina.deploy.NamingResources.destroyInternal(NamingResources.java:1091)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.StandardContext.destroyInternal(StandardContext.java:5731)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:1041)
+	at org.apache.catalina.core.ContainerBase.destroyInternal(ContainerBase.java:1234)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:1041)
+	at org.apache.catalina.core.ContainerBase.destroyInternal(ContainerBase.java:1234)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.StandardService.destroyInternal(StandardService.java:593)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.StandardServer.destroyInternal(StandardServer.java:822)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.startup.Tomcat.destroy(Tomcat.java:355)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.stop(TomcatEmbeddedServletContainer.java:97)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.stopAndReleaseEmbeddedServletContainer(EmbeddedWebApplicationContext.java:330)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.doClose(EmbeddedWebApplicationContext.java:132)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1013)
+	at org.springframework.boot.sample.ops.ui.SampleActuatorUiApplicationPortTests.stop(SampleActuatorUiApplicationPortTests.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+2013-08-02 11:35:03.764  WARN 23122 --- [           main] o.a.catalina.util.LifecycleMBeanBase     : Failed to unregister MBean with name [Tomcat:type=Manager,context=/,host=localhost] during component destruction
+
+javax.management.InstanceNotFoundException: Tomcat:type=Manager,context=/,host=localhost
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1118)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.exclusiveUnregisterMBean(DefaultMBeanServerInterceptor.java:433)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.unregisterMBean(DefaultMBeanServerInterceptor.java:421)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.unregisterMBean(JmxMBeanServer.java:540)
+	at org.apache.catalina.util.LifecycleMBeanBase.unregister(LifecycleMBeanBase.java:194)
+	at org.apache.catalina.util.LifecycleMBeanBase.destroyInternal(LifecycleMBeanBase.java:73)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.ContainerBase.destroyInternal(ContainerBase.java:1214)
+	at org.apache.catalina.core.StandardContext.destroyInternal(StandardContext.java:5738)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:1041)
+	at org.apache.catalina.core.ContainerBase.destroyInternal(ContainerBase.java:1234)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:1041)
+	at org.apache.catalina.core.ContainerBase.destroyInternal(ContainerBase.java:1234)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.StandardService.destroyInternal(StandardService.java:593)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.StandardServer.destroyInternal(StandardServer.java:822)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.startup.Tomcat.destroy(Tomcat.java:355)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.stop(TomcatEmbeddedServletContainer.java:97)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.stopAndReleaseEmbeddedServletContainer(EmbeddedWebApplicationContext.java:330)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.doClose(EmbeddedWebApplicationContext.java:132)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1013)
+	at org.springframework.boot.sample.ops.ui.SampleActuatorUiApplicationPortTests.stop(SampleActuatorUiApplicationPortTests.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+2013-08-02 11:35:03.766  WARN 23122 --- [           main] o.a.catalina.util.LifecycleMBeanBase     : Failed to unregister MBean with name [Tomcat:type=Loader,context=/,host=localhost] during component destruction
+
+javax.management.InstanceNotFoundException: Tomcat:type=Loader,context=/,host=localhost
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1118)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.exclusiveUnregisterMBean(DefaultMBeanServerInterceptor.java:433)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.unregisterMBean(DefaultMBeanServerInterceptor.java:421)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.unregisterMBean(JmxMBeanServer.java:540)
+	at org.apache.catalina.util.LifecycleMBeanBase.unregister(LifecycleMBeanBase.java:194)
+	at org.apache.catalina.util.LifecycleMBeanBase.destroyInternal(LifecycleMBeanBase.java:73)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.ContainerBase.destroyInternal(ContainerBase.java:1224)
+	at org.apache.catalina.core.StandardContext.destroyInternal(StandardContext.java:5738)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:1041)
+	at org.apache.catalina.core.ContainerBase.destroyInternal(ContainerBase.java:1234)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:1041)
+	at org.apache.catalina.core.ContainerBase.destroyInternal(ContainerBase.java:1234)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.StandardService.destroyInternal(StandardService.java:593)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.StandardServer.destroyInternal(StandardServer.java:822)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.startup.Tomcat.destroy(Tomcat.java:355)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.stop(TomcatEmbeddedServletContainer.java:97)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.stopAndReleaseEmbeddedServletContainer(EmbeddedWebApplicationContext.java:330)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.doClose(EmbeddedWebApplicationContext.java:132)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1013)
+	at org.springframework.boot.sample.ops.ui.SampleActuatorUiApplicationPortTests.stop(SampleActuatorUiApplicationPortTests.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+2013-08-02 11:35:03.768  WARN 23122 --- [           main] o.a.catalina.util.LifecycleMBeanBase     : Failed to unregister MBean with name [Tomcat:type=Valve,context=/,host=localhost,name=NonLoginAuthenticator] during component destruction
+
+javax.management.InstanceNotFoundException: Tomcat:type=Valve,context=/,host=localhost,name=NonLoginAuthenticator
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1118)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.exclusiveUnregisterMBean(DefaultMBeanServerInterceptor.java:433)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.unregisterMBean(DefaultMBeanServerInterceptor.java:421)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.unregisterMBean(JmxMBeanServer.java:540)
+	at org.apache.catalina.util.LifecycleMBeanBase.unregister(LifecycleMBeanBase.java:194)
+	at org.apache.catalina.util.LifecycleMBeanBase.destroyInternal(LifecycleMBeanBase.java:73)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.StandardPipeline.removeValve(StandardPipeline.java:460)
+	at org.apache.catalina.core.StandardPipeline.destroyInternal(StandardPipeline.java:222)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.ContainerBase.destroyInternal(ContainerBase.java:1229)
+	at org.apache.catalina.core.StandardContext.destroyInternal(StandardContext.java:5738)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:1041)
+	at org.apache.catalina.core.ContainerBase.destroyInternal(ContainerBase.java:1234)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:1041)
+	at org.apache.catalina.core.ContainerBase.destroyInternal(ContainerBase.java:1234)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.StandardService.destroyInternal(StandardService.java:593)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.StandardServer.destroyInternal(StandardServer.java:822)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.startup.Tomcat.destroy(Tomcat.java:355)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.stop(TomcatEmbeddedServletContainer.java:97)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.stopAndReleaseEmbeddedServletContainer(EmbeddedWebApplicationContext.java:330)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.doClose(EmbeddedWebApplicationContext.java:132)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1013)
+	at org.springframework.boot.sample.ops.ui.SampleActuatorUiApplicationPortTests.stop(SampleActuatorUiApplicationPortTests.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+2013-08-02 11:35:03.769  WARN 23122 --- [           main] o.a.catalina.util.LifecycleMBeanBase     : Failed to unregister MBean with name [Tomcat:type=Valve,context=/,host=localhost,name=StandardContextValve] during component destruction
+
+javax.management.InstanceNotFoundException: Tomcat:type=Valve,context=/,host=localhost,name=StandardContextValve
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1118)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.exclusiveUnregisterMBean(DefaultMBeanServerInterceptor.java:433)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.unregisterMBean(DefaultMBeanServerInterceptor.java:421)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.unregisterMBean(JmxMBeanServer.java:540)
+	at org.apache.catalina.util.LifecycleMBeanBase.unregister(LifecycleMBeanBase.java:194)
+	at org.apache.catalina.util.LifecycleMBeanBase.destroyInternal(LifecycleMBeanBase.java:73)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.StandardPipeline.removeValve(StandardPipeline.java:460)
+	at org.apache.catalina.core.StandardPipeline.destroyInternal(StandardPipeline.java:222)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.ContainerBase.destroyInternal(ContainerBase.java:1229)
+	at org.apache.catalina.core.StandardContext.destroyInternal(StandardContext.java:5738)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:1041)
+	at org.apache.catalina.core.ContainerBase.destroyInternal(ContainerBase.java:1234)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:1041)
+	at org.apache.catalina.core.ContainerBase.destroyInternal(ContainerBase.java:1234)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.StandardService.destroyInternal(StandardService.java:593)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.StandardServer.destroyInternal(StandardServer.java:822)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.startup.Tomcat.destroy(Tomcat.java:355)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.stop(TomcatEmbeddedServletContainer.java:97)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.stopAndReleaseEmbeddedServletContainer(EmbeddedWebApplicationContext.java:330)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.doClose(EmbeddedWebApplicationContext.java:132)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1013)
+	at org.springframework.boot.sample.ops.ui.SampleActuatorUiApplicationPortTests.stop(SampleActuatorUiApplicationPortTests.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+2013-08-02 11:35:03.771  WARN 23122 --- [           main] o.a.catalina.util.LifecycleMBeanBase     : Failed to unregister MBean with name [Tomcat:j2eeType=WebModule,name=//localhost/,J2EEApplication=none,J2EEServer=none] during component destruction
+
+javax.management.InstanceNotFoundException: Tomcat:j2eeType=WebModule,name=//localhost/,J2EEApplication=none,J2EEServer=none
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1118)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.exclusiveUnregisterMBean(DefaultMBeanServerInterceptor.java:433)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.unregisterMBean(DefaultMBeanServerInterceptor.java:421)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.unregisterMBean(JmxMBeanServer.java:540)
+	at org.apache.catalina.util.LifecycleMBeanBase.unregister(LifecycleMBeanBase.java:194)
+	at org.apache.catalina.util.LifecycleMBeanBase.destroyInternal(LifecycleMBeanBase.java:73)
+	at org.apache.catalina.core.ContainerBase.destroyInternal(ContainerBase.java:1247)
+	at org.apache.catalina.core.StandardContext.destroyInternal(StandardContext.java:5738)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:1041)
+	at org.apache.catalina.core.ContainerBase.destroyInternal(ContainerBase.java:1234)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:1041)
+	at org.apache.catalina.core.ContainerBase.destroyInternal(ContainerBase.java:1234)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.StandardService.destroyInternal(StandardService.java:593)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.StandardServer.destroyInternal(StandardServer.java:822)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.startup.Tomcat.destroy(Tomcat.java:355)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.stop(TomcatEmbeddedServletContainer.java:97)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.stopAndReleaseEmbeddedServletContainer(EmbeddedWebApplicationContext.java:330)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.doClose(EmbeddedWebApplicationContext.java:132)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1013)
+	at org.springframework.boot.sample.ops.ui.SampleActuatorUiApplicationPortTests.stop(SampleActuatorUiApplicationPortTests.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+2013-08-02 11:35:03.772  WARN 23122 --- [           main] o.a.catalina.util.LifecycleMBeanBase     : Failed to unregister MBean with name [Tomcat:type=Host,host=localhost] during component destruction
+
+javax.management.InstanceNotFoundException: Tomcat:type=Host,host=localhost
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1118)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.exclusiveUnregisterMBean(DefaultMBeanServerInterceptor.java:433)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.unregisterMBean(DefaultMBeanServerInterceptor.java:421)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.unregisterMBean(JmxMBeanServer.java:540)
+	at org.apache.catalina.util.LifecycleMBeanBase.unregister(LifecycleMBeanBase.java:194)
+	at org.apache.catalina.util.LifecycleMBeanBase.destroyInternal(LifecycleMBeanBase.java:73)
+	at org.apache.catalina.core.ContainerBase.destroyInternal(ContainerBase.java:1247)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:1041)
+	at org.apache.catalina.core.ContainerBase.destroyInternal(ContainerBase.java:1234)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.StandardService.destroyInternal(StandardService.java:593)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.StandardServer.destroyInternal(StandardServer.java:822)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.startup.Tomcat.destroy(Tomcat.java:355)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.stop(TomcatEmbeddedServletContainer.java:97)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.stopAndReleaseEmbeddedServletContainer(EmbeddedWebApplicationContext.java:330)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.doClose(EmbeddedWebApplicationContext.java:132)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1013)
+	at org.springframework.boot.sample.ops.ui.SampleActuatorUiApplicationPortTests.stop(SampleActuatorUiApplicationPortTests.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+2013-08-02 11:35:03.774  WARN 23122 --- [           main] o.a.catalina.util.LifecycleMBeanBase     : Failed to unregister MBean with name [Tomcat:type=Engine] during component destruction
+
+javax.management.InstanceNotFoundException: Tomcat:type=Engine
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1118)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.exclusiveUnregisterMBean(DefaultMBeanServerInterceptor.java:433)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.unregisterMBean(DefaultMBeanServerInterceptor.java:421)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.unregisterMBean(JmxMBeanServer.java:540)
+	at org.apache.catalina.util.LifecycleMBeanBase.unregister(LifecycleMBeanBase.java:194)
+	at org.apache.catalina.util.LifecycleMBeanBase.destroyInternal(LifecycleMBeanBase.java:73)
+	at org.apache.catalina.core.ContainerBase.destroyInternal(ContainerBase.java:1247)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.StandardService.destroyInternal(StandardService.java:593)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.StandardServer.destroyInternal(StandardServer.java:822)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.startup.Tomcat.destroy(Tomcat.java:355)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.stop(TomcatEmbeddedServletContainer.java:97)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.stopAndReleaseEmbeddedServletContainer(EmbeddedWebApplicationContext.java:330)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.doClose(EmbeddedWebApplicationContext.java:132)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1013)
+	at org.springframework.boot.sample.ops.ui.SampleActuatorUiApplicationPortTests.stop(SampleActuatorUiApplicationPortTests.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+2013-08-02 11:35:03.775  WARN 23122 --- [           main] o.a.catalina.util.LifecycleMBeanBase     : Failed to unregister MBean with name [Tomcat:type=Service] during component destruction
+
+javax.management.InstanceNotFoundException: Tomcat:type=Service
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1118)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.exclusiveUnregisterMBean(DefaultMBeanServerInterceptor.java:433)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.unregisterMBean(DefaultMBeanServerInterceptor.java:421)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.unregisterMBean(JmxMBeanServer.java:540)
+	at org.apache.catalina.util.LifecycleMBeanBase.unregister(LifecycleMBeanBase.java:194)
+	at org.apache.catalina.util.LifecycleMBeanBase.destroyInternal(LifecycleMBeanBase.java:73)
+	at org.apache.catalina.core.StandardService.destroyInternal(StandardService.java:596)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.StandardServer.destroyInternal(StandardServer.java:822)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.startup.Tomcat.destroy(Tomcat.java:355)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.stop(TomcatEmbeddedServletContainer.java:97)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.stopAndReleaseEmbeddedServletContainer(EmbeddedWebApplicationContext.java:330)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.doClose(EmbeddedWebApplicationContext.java:132)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1013)
+	at org.springframework.boot.sample.ops.ui.SampleActuatorUiApplicationPortTests.stop(SampleActuatorUiApplicationPortTests.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+2013-08-02 11:35:03.776  WARN 23122 --- [           main] o.a.catalina.util.LifecycleMBeanBase     : Failed to unregister MBean with name [Tomcat:type=NamingResources] during component destruction
+
+javax.management.InstanceNotFoundException: Tomcat:type=NamingResources
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1118)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.exclusiveUnregisterMBean(DefaultMBeanServerInterceptor.java:433)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.unregisterMBean(DefaultMBeanServerInterceptor.java:421)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.unregisterMBean(JmxMBeanServer.java:540)
+	at org.apache.catalina.util.LifecycleMBeanBase.unregister(LifecycleMBeanBase.java:194)
+	at org.apache.catalina.util.LifecycleMBeanBase.destroyInternal(LifecycleMBeanBase.java:73)
+	at org.apache.catalina.deploy.NamingResources.destroyInternal(NamingResources.java:1091)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.core.StandardServer.destroyInternal(StandardServer.java:825)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.startup.Tomcat.destroy(Tomcat.java:355)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.stop(TomcatEmbeddedServletContainer.java:97)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.stopAndReleaseEmbeddedServletContainer(EmbeddedWebApplicationContext.java:330)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.doClose(EmbeddedWebApplicationContext.java:132)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1013)
+	at org.springframework.boot.sample.ops.ui.SampleActuatorUiApplicationPortTests.stop(SampleActuatorUiApplicationPortTests.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+2013-08-02 11:35:03.777  WARN 23122 --- [           main] o.a.catalina.util.LifecycleMBeanBase     : Failed to unregister MBean with name [Tomcat:type=MBeanFactory] during component destruction
+
+javax.management.InstanceNotFoundException: Tomcat:type=MBeanFactory
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1118)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.exclusiveUnregisterMBean(DefaultMBeanServerInterceptor.java:433)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.unregisterMBean(DefaultMBeanServerInterceptor.java:421)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.unregisterMBean(JmxMBeanServer.java:540)
+	at org.apache.catalina.util.LifecycleMBeanBase.unregister(LifecycleMBeanBase.java:194)
+	at org.apache.catalina.core.StandardServer.destroyInternal(StandardServer.java:827)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.startup.Tomcat.destroy(Tomcat.java:355)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.stop(TomcatEmbeddedServletContainer.java:97)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.stopAndReleaseEmbeddedServletContainer(EmbeddedWebApplicationContext.java:330)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.doClose(EmbeddedWebApplicationContext.java:132)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1013)
+	at org.springframework.boot.sample.ops.ui.SampleActuatorUiApplicationPortTests.stop(SampleActuatorUiApplicationPortTests.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+2013-08-02 11:35:03.778  WARN 23122 --- [           main] o.a.catalina.util.LifecycleMBeanBase     : Failed to unregister MBean with name [Tomcat:type=StringCache] during component destruction
+
+javax.management.InstanceNotFoundException: Tomcat:type=StringCache
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1118)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.exclusiveUnregisterMBean(DefaultMBeanServerInterceptor.java:433)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.unregisterMBean(DefaultMBeanServerInterceptor.java:421)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.unregisterMBean(JmxMBeanServer.java:540)
+	at org.apache.catalina.util.LifecycleMBeanBase.unregister(LifecycleMBeanBase.java:194)
+	at org.apache.catalina.core.StandardServer.destroyInternal(StandardServer.java:829)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.startup.Tomcat.destroy(Tomcat.java:355)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.stop(TomcatEmbeddedServletContainer.java:97)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.stopAndReleaseEmbeddedServletContainer(EmbeddedWebApplicationContext.java:330)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.doClose(EmbeddedWebApplicationContext.java:132)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1013)
+	at org.springframework.boot.sample.ops.ui.SampleActuatorUiApplicationPortTests.stop(SampleActuatorUiApplicationPortTests.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+2013-08-02 11:35:03.779  WARN 23122 --- [           main] o.a.catalina.util.LifecycleMBeanBase     : Failed to unregister MBean with name [Tomcat:type=Server] during component destruction
+
+javax.management.InstanceNotFoundException: Tomcat:type=Server
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getMBean(DefaultMBeanServerInterceptor.java:1118)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.exclusiveUnregisterMBean(DefaultMBeanServerInterceptor.java:433)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.unregisterMBean(DefaultMBeanServerInterceptor.java:421)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.unregisterMBean(JmxMBeanServer.java:540)
+	at org.apache.catalina.util.LifecycleMBeanBase.unregister(LifecycleMBeanBase.java:194)
+	at org.apache.catalina.util.LifecycleMBeanBase.destroyInternal(LifecycleMBeanBase.java:73)
+	at org.apache.catalina.core.StandardServer.destroyInternal(StandardServer.java:831)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:305)
+	at org.apache.catalina.startup.Tomcat.destroy(Tomcat.java:355)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.stop(TomcatEmbeddedServletContainer.java:97)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.stopAndReleaseEmbeddedServletContainer(EmbeddedWebApplicationContext.java:330)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.doClose(EmbeddedWebApplicationContext.java:132)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1013)
+	at org.springframework.boot.sample.ops.ui.SampleActuatorUiApplicationPortTests.stop(SampleActuatorUiApplicationPortTests.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 1.218 sec - in org.springframework.boot.sample.ops.ui.SampleActuatorUiApplicationPortTests
+
+Results :
+
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 1
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ spring-boot-sample-actuator-ui ---
+[INFO] Building jar: /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator-ui/target/spring-boot-sample-actuator-ui-0.5.0.BUILD-SNAPSHOT.jar
+[INFO] META-INF/maven/org.springframework.boot/spring-boot-sample-actuator-ui/pom.xml already added, skipping
+[INFO] META-INF/maven/org.springframework.boot/spring-boot-sample-actuator-ui/pom.properties already added, skipping
+[INFO] 
+[INFO] --- maven-javadoc-plugin:2.9:jar (attach-javadocs) @ spring-boot-sample-actuator-ui ---
+[INFO] 
+Loading source files for package org.springframework.boot.sample.ops.ui...
+Constructing Javadoc information...
+Standard Doclet version 1.6.0_24
+Building tree for all the packages and classes...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator-ui/target/apidocs/org/springframework/boot/sample/ops/ui/SampleActuatorUiApplication.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator-ui/target/apidocs/org/springframework/boot/sample/ops/ui/package-frame.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator-ui/target/apidocs/org/springframework/boot/sample/ops/ui/package-summary.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator-ui/target/apidocs/org/springframework/boot/sample/ops/ui/package-tree.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator-ui/target/apidocs/constant-values.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator-ui/target/apidocs/org/springframework/boot/sample/ops/ui/class-use/SampleActuatorUiApplication.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator-ui/target/apidocs/org/springframework/boot/sample/ops/ui/package-use.html...
+Building index for all the packages and classes...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator-ui/target/apidocs/overview-tree.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator-ui/target/apidocs/index-all.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator-ui/target/apidocs/deprecated-list.html...
+Building index for all classes...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator-ui/target/apidocs/allclasses-frame.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator-ui/target/apidocs/allclasses-noframe.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator-ui/target/apidocs/index.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator-ui/target/apidocs/help-doc.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator-ui/target/apidocs/stylesheet.css...
+[INFO] Building jar: /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator-ui/target/spring-boot-sample-actuator-ui-0.5.0.BUILD-SNAPSHOT-javadoc.jar
+[INFO] 
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ spring-boot-sample-actuator-ui ---
+[INFO] Building jar: /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator-ui/target/spring-boot-sample-actuator-ui-0.5.0.BUILD-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:0.5.0.BUILD-SNAPSHOT:repackage (default) @ spring-boot-sample-actuator-ui ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 11.484s
+[INFO] Finished at: Fri Aug 02 11:35:06 BST 2013
+[INFO] Final Memory: 21M/217M
+[INFO] ------------------------------------------------------------------------

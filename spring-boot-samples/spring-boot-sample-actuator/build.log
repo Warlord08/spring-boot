@@ -1,0 +1,966 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spring-boot-sample-actuator 0.5.0.BUILD-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+Downloading: file:///home/dsyer/.m2/repository/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1.pom
+Downloaded: file:///home/dsyer/.m2/repository/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1.pom (13 KB at 228.5 KB/sec)
+Downloading: file:///home/dsyer/.m2/repository/net/java/jvnet-parent/1/jvnet-parent-1.pom
+Downloaded: file:///home/dsyer/.m2/repository/net/java/jvnet-parent/1/jvnet-parent-1.pom (5 KB at 270.6 KB/sec)
+Downloading: file:///home/dsyer/.m2/repository/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1.jar
+Downloaded: file:///home/dsyer/.m2/repository/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1.jar (84 KB at 1812.0 KB/sec)
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ spring-boot-sample-actuator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ spring-boot-sample-actuator ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ spring-boot-sample-actuator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ spring-boot-sample-actuator ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 7 source files to /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.15:test (default-test) @ spring-boot-sample-actuator ---
+[INFO] Surefire report directory: /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.springframework.boot.sample.ops.ManagementAddressSampleActuatorApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::   v0.5.0.BUILD.SNAPSHOT
+
+02-Aug-2013 11:35:51 org.springframework.boot.StartupInfoLogger log
+INFO: Starting application on dsyer with PID 24001 (/home/dsyer/dev/bootstrap/boot/spring-boot-integration-tests/target/local-repo/org/springframework/boot/spring-boot/0.5.0.BUILD-SNAPSHOT/spring-boot-0.5.0.BUILD-SNAPSHOT.jar started by dsyer)
+02-Aug-2013 11:35:51 org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f60877b: startup date [Fri Aug 02 11:35:51 BST 2013]; root of context hierarchy
+02-Aug-2013 11:35:51 org.springframework.beans.factory.support.DefaultListableBeanFactory registerBeanDefinition
+INFO: Overriding bean definition for bean 'propertySourcesBinder': replacing [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+02-Aug-2013 11:35:52 org.springframework.beans.factory.support.DefaultListableBeanFactory registerBeanDefinition
+INFO: Overriding bean definition for bean 'propertySourcesBinder': replacing [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+02-Aug-2013 11:35:52 org.springframework.beans.factory.support.DefaultListableBeanFactory registerBeanDefinition
+INFO: Overriding bean definition for bean 'propertySourcesBinder': replacing [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2013-08-02 11:35:52.378  INFO 24001 [pool-1-thread-1] --- o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 4.3.1.Final
+2013-08-02 11:35:52.669  INFO 24001 [pool-1-thread-1] --- org.eclipse.jetty.server.Server          : jetty-8.1.9.v20130131
+2013-08-02 11:35:52.696  INFO 24001 [pool-1-thread-1] --- /                                        : Initializing Spring embedded WebApplicationContext
+02-Aug-2013 11:35:52 org.springframework.boot.context.embedded.EmbeddedWebApplicationContext prepareEmbeddedWebApplicationContext
+INFO: Root WebApplicationContext: initialization completed in 1314 ms
+02-Aug-2013 11:35:53 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/css/**'], []
+02-Aug-2013 11:35:53 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/js/**'], []
+02-Aug-2013 11:35:53 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/images/**'], []
+02-Aug-2013 11:35:53 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/**/favicon.ico'], []
+02-Aug-2013 11:35:53 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/health'], []
+02-Aug-2013 11:35:53 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/error'], []
+02-Aug-2013 11:35:53 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: org.springframework.security.config.annotation.web.builders.HttpSecurity$OrRequestMatcher@14b87d31, [org.springframework.security.web.context.SecurityContextPersistenceFilter@5c232697, org.springframework.security.web.authentication.logout.LogoutFilter@7bab2c3, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@722e242b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3348bd9d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6c98a8b8, org.springframework.security.web.session.SessionManagementFilter@1a6cffbb, org.springframework.security.web.access.ExceptionTranslationFilter@6a095b8a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@c58f769]
+2013-08-02 11:35:53.610  INFO 24001 [pool-1-thread-1] --- /                                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+02-Aug-2013 11:35:53 org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'dispatcherServlet': initialization started
+02-Aug-2013 11:35:53 org.springframework.web.servlet.resource.ResourceHttpRequestHandler afterPropertiesSet
+WARNING: Locations list is empty. No resources will be served
+02-Aug-2013 11:35:53 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+02-Aug-2013 11:35:53 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/foo],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String org.springframework.boot.sample.ops.SampleController.foo()
+02-Aug-2013 11:35:53 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.String> org.springframework.boot.sample.ops.SampleController.helloWorld()
+02-Aug-2013 11:35:53 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.ops.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+02-Aug-2013 11:35:53 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[text/html],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.ops.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+02-Aug-2013 11:35:53 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+02-Aug-2013 11:35:53 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+02-Aug-2013 11:35:53 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+02-Aug-2013 11:35:53 org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'dispatcherServlet': initialization completed in 364 ms
+2013-08-02 11:35:54.042  INFO 24001 [pool-1-thread-1] --- o.e.jetty.server.AbstractConnector       : Started SelectChannelConnector@0.0.0.0:9010
+02-Aug-2013 11:35:54 org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@54b4b0a4: startup date [Fri Aug 02 11:35:54 BST 2013]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f60877b
+2013-08-02 11:35:54.174  INFO 24001 [pool-1-thread-1] --- org.eclipse.jetty.server.Server          : jetty-8.1.9.v20130131
+2013-08-02 11:35:54.176  INFO 24001 [pool-1-thread-1] --- /                                        : Initializing Spring embedded WebApplicationContext
+02-Aug-2013 11:35:54 org.springframework.boot.context.embedded.EmbeddedWebApplicationContext prepareEmbeddedWebApplicationContext
+INFO: Root WebApplicationContext: initialization completed in 45 ms
+2013-08-02 11:35:54.201  INFO 24001 [pool-1-thread-1] --- /                                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+02-Aug-2013 11:35:54 org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'dispatcherServlet': initialization started
+02-Aug-2013 11:35:54 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/env] onto handler of type [class org.springframework.boot.ops.endpoint.EnvironmentEndpoint]
+02-Aug-2013 11:35:54 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/health] onto handler of type [class org.springframework.boot.ops.endpoint.HealthEndpoint]
+02-Aug-2013 11:35:54 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/beans] onto handler of type [class org.springframework.boot.ops.endpoint.BeansEndpoint]
+02-Aug-2013 11:35:54 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/info] onto handler of type [class org.springframework.boot.ops.endpoint.InfoEndpoint]
+02-Aug-2013 11:35:54 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/metrics] onto handler of type [class org.springframework.boot.ops.endpoint.MetricsEndpoint]
+02-Aug-2013 11:35:54 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/trace] onto handler of type [class org.springframework.boot.ops.endpoint.TraceEndpoint]
+02-Aug-2013 11:35:54 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/dump] onto handler of type [class org.springframework.boot.ops.endpoint.DumpEndpoint]
+02-Aug-2013 11:35:54 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/shutdown] onto handler of type [class org.springframework.boot.ops.endpoint.ShutdownEndpoint]
+02-Aug-2013 11:35:54 org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2013-08-02 11:35:54.259  INFO 24001 [pool-1-thread-1] --- o.e.jetty.server.AbstractConnector       : Started SelectChannelConnector@localhost:9011
+2013-08-02 11:35:54.273  INFO 24001 [pool-1-thread-1] --- o.e.jetty.server.AbstractConnector       : Started SelectChannelConnector@localhost:9011
+2013-08-02 11:35:54.275  INFO 24001 [pool-1-thread-1] --- o.e.jetty.server.AbstractConnector       : Started SelectChannelConnector@0.0.0.0:9010
+02-Aug-2013 11:35:54 sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@1f6b69d76 pairs: {GET / HTTP/1.1: null}{Accept: application/json, application/*+json}{Authorization: Basic dXNlcjpwYXNzd29yZA==}{User-Agent: Java/1.6.0_24}{Host: localhost:9010}{Connection: keep-alive}
+02-Aug-2013 11:35:54 org.springframework.boot.ops.audit.listener.AuditListener onApplicationEvent
+INFO: AuditEvent [timestamp=Fri Aug 02 11:35:54 BST 2013, principal=user, type=AUTHENTICATION_SUCCESS, data={details=org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null}]
+02-Aug-2013 11:35:54 sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@5e26efd34 pairs: {null: HTTP/1.1 200 OK}{Content-Type: application/json;charset=UTF-8}{Transfer-Encoding: chunked}{Server: Jetty(8.1.9.v20130131)}
+02-Aug-2013 11:35:54 org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f60877b: startup date [Fri Aug 02 11:35:51 BST 2013]; root of context hierarchy
+02-Aug-2013 11:35:54 org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@54b4b0a4: startup date [Fri Aug 02 11:35:54 BST 2013]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f60877b
+02-Aug-2013 11:35:54 org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3a8bd3bb: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,endpointWebMvcChildContextConfiguration,propertyPlaceholderAutoConfiguration,embeddedServletContainerAutoConfiguration,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,org.springframework.boot.ops.autoconfigure.EndpointWebMvcChildContextConfiguration$EndpointWebMvcChildContextSecurityConfiguration,springSecurityFilterChain,dispatcherServlet,handlerMapping,handlerAdapter,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedJetty,jettyEmbeddedServletContainerFactory,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$DispatcherServletConfiguration,embeddedServletContainerCustomizerBeanPostProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@3adec8b3
+2013-08-02 11:35:54.534  INFO 24001 [main] --- o.e.jetty.server.handler.ContextHandler  : stopped o.e.j.w.WebAppContext{/,null}
+02-Aug-2013 11:35:54 org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3adec8b3: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,sampleActuatorApplication,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,helloWorldService,sampleController,serviceProperties,propertySourcesBinder,org.springframework.boot.autoconfigure.MessageSourceAutoConfiguration,messageSource,org.springframework.boot.autoconfigure.PropertyPlaceholderAutoConfiguration,propertySourcesPlaceholderConfigurer,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedJetty,jettyEmbeddedServletContainerFactory,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$DispatcherServletConfiguration,dispatcherServlet,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration,embeddedServletContainerCustomizerBeanPostProcessor,org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration,faviconHandlerMapping,faviconRequestHandler,org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration,requestMappingHandlerMapping,mvcContentNegotiationManager,viewControllerHandlerMapping,beanNameHandlerMapping,resourceHandlerMapping,defaultServletHandlerMapping,requestMappingHandlerAdapter,mvcConversionService,mvcValidator,httpRequestHandlerAdapter,simpleControllerHandlerAdapter,handlerExceptionResolver,org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter,org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration,hiddenHttpMethodFilter,org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration,org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration,org.springframework.boot.autoconfigure.web.ServerPropertiesAutoConfiguration,org.springframework.boot.context.embedded.properties.ServerProperties,org.springframework.boot.ops.autoconfigure.AuditAutoConfiguration$AuditEventRepositoryConfiguration,auditEventRepository,org.springframework.boot.ops.autoconfigure.AuditAutoConfiguration,auditListener,authenticationAuditListener,authorizationAuditListener,org.springframework.boot.ops.autoconfigure.EndpointAutoConfiguration$InfoPropertiesConfiguration,org.springframework.boot.ops.autoconfigure.EndpointAutoConfiguration,environmentEndpoint,healthEndpoint,beansEndpoint,infoEndpoint,metricsEndpoint,traceEndpoint,dumpEndpoint,shutdownEndpoint,org.springframework.boot.ops.autoconfigure.ManagementServerPropertiesAutoConfiguration,org.springframework.actuate.properties.ManagementServerProperties,org.springframework.boot.ops.autoconfigure.EndpointWebMvcAutoConfiguration,endpointHandlerMapping,endpointHandlerAdapter,org.springframework.boot.ops.autoconfigure.ErrorMvcAutoConfiguration,basicErrorController,org.springframework.boot.ops.autoconfigure.MetricRepositoryAutoConfiguration,counterService,gaugeService,metricRepository,org.springframework.boot.ops.autoconfigure.MetricFilterAutoConfiguration,metricFilter,org.springframework.boot.ops.autoconfigure.SecurityAutoConfiguration$AuthenticationManagerConfiguration,authenticationManager,org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration,webSecurityExpressionHandler,springSecurityFilterChain,privilegeEvaluator,org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration,objectPostProcessor,org.springframework.boot.ops.autoconfigure.SecurityAutoConfiguration,org.springframework.actuate.properties.SecurityProperties,authenticationEventPublisher,webSecurityConfigurerAdapter,org.springframework.boot.ops.autoconfigure.TraceRepositoryAutoConfiguration,traceRepository,org.springframework.boot.ops.autoconfigure.TraceWebFilterAutoConfiguration,webRequestLoggingFilter]; root of factory hierarchy
+2013-08-02 11:35:54.612  INFO 24001 [main] --- o.e.jetty.server.handler.ContextHandler  : stopped o.e.j.w.WebAppContext{/,null}
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 3.776 sec - in org.springframework.boot.sample.ops.ManagementAddressSampleActuatorApplicationTests
+Running org.springframework.boot.sample.ops.NoManagementSampleActuatorApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::   v0.5.0.BUILD.SNAPSHOT
+
+02-Aug-2013 11:35:54 org.springframework.boot.StartupInfoLogger log
+INFO: Starting application on dsyer with PID 24001 (/home/dsyer/dev/bootstrap/boot/spring-boot-integration-tests/target/local-repo/org/springframework/boot/spring-boot/0.5.0.BUILD-SNAPSHOT/spring-boot-0.5.0.BUILD-SNAPSHOT.jar started by dsyer)
+02-Aug-2013 11:35:54 org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3b2ab74f: startup date [Fri Aug 02 11:35:54 BST 2013]; root of context hierarchy
+02-Aug-2013 11:35:54 org.springframework.beans.factory.support.DefaultListableBeanFactory registerBeanDefinition
+INFO: Overriding bean definition for bean 'propertySourcesBinder': replacing [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+02-Aug-2013 11:35:54 org.springframework.beans.factory.support.DefaultListableBeanFactory registerBeanDefinition
+INFO: Overriding bean definition for bean 'propertySourcesBinder': replacing [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+02-Aug-2013 11:35:54 org.springframework.beans.factory.support.DefaultListableBeanFactory registerBeanDefinition
+INFO: Overriding bean definition for bean 'propertySourcesBinder': replacing [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2013-08-02 11:35:55.073  INFO 24001 [pool-2-thread-1] --- org.eclipse.jetty.server.Server          : jetty-8.1.9.v20130131
+2013-08-02 11:35:55.075  INFO 24001 [pool-2-thread-1] --- /                                        : Initializing Spring embedded WebApplicationContext
+02-Aug-2013 11:35:55 org.springframework.boot.context.embedded.EmbeddedWebApplicationContext prepareEmbeddedWebApplicationContext
+INFO: Root WebApplicationContext: initialization completed in 368 ms
+02-Aug-2013 11:35:55 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/css/**'], []
+02-Aug-2013 11:35:55 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/js/**'], []
+02-Aug-2013 11:35:55 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/images/**'], []
+02-Aug-2013 11:35:55 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/**/favicon.ico'], []
+02-Aug-2013 11:35:55 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/health'], []
+02-Aug-2013 11:35:55 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/error'], []
+02-Aug-2013 11:35:55 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: org.springframework.security.config.annotation.web.builders.HttpSecurity$OrRequestMatcher@263534c1, [org.springframework.security.web.context.SecurityContextPersistenceFilter@6f1a7e7f, org.springframework.security.web.authentication.logout.LogoutFilter@3466fcd5, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@55611ed3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b2eda6f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6106dc2d, org.springframework.security.web.session.SessionManagementFilter@961401f, org.springframework.security.web.access.ExceptionTranslationFilter@4fb8b808, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@683a3e1b]
+2013-08-02 11:35:55.462  INFO 24001 [pool-2-thread-1] --- /                                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+02-Aug-2013 11:35:55 org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'dispatcherServlet': initialization started
+02-Aug-2013 11:35:55 org.springframework.web.servlet.resource.ResourceHttpRequestHandler afterPropertiesSet
+WARNING: Locations list is empty. No resources will be served
+02-Aug-2013 11:35:55 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+02-Aug-2013 11:35:55 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/foo],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String org.springframework.boot.sample.ops.SampleController.foo()
+02-Aug-2013 11:35:55 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.String> org.springframework.boot.sample.ops.SampleController.helloWorld()
+02-Aug-2013 11:35:55 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.ops.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+02-Aug-2013 11:35:55 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[text/html],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.ops.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+02-Aug-2013 11:35:55 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+02-Aug-2013 11:35:55 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+02-Aug-2013 11:35:55 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+02-Aug-2013 11:35:55 org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'dispatcherServlet': initialization completed in 195 ms
+2013-08-02 11:35:55.660  INFO 24001 [pool-2-thread-1] --- o.e.jetty.server.AbstractConnector       : Started SelectChannelConnector@0.0.0.0:8080
+2013-08-02 11:35:55.699  INFO 24001 [pool-2-thread-1] --- o.e.jetty.server.AbstractConnector       : Started SelectChannelConnector@0.0.0.0:8080
+02-Aug-2013 11:35:55 sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@360294836 pairs: {GET / HTTP/1.1: null}{Accept: application/json, application/*+json}{Authorization: Basic dXNlcjpwYXNzd29yZA==}{User-Agent: Java/1.6.0_24}{Host: localhost:8080}{Connection: keep-alive}
+02-Aug-2013 11:35:55 org.springframework.boot.ops.audit.listener.AuditListener onApplicationEvent
+INFO: AuditEvent [timestamp=Fri Aug 02 11:35:55 BST 2013, principal=user, type=AUTHENTICATION_SUCCESS, data={details=org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null}]
+02-Aug-2013 11:35:55 sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@7ba76fdd4 pairs: {null: HTTP/1.1 200 OK}{Content-Type: application/json;charset=UTF-8}{Transfer-Encoding: chunked}{Server: Jetty(8.1.9.v20130131)}
+02-Aug-2013 11:35:55 sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@2da155976 pairs: {GET / HTTP/1.1: null}{Accept: application/json, application/*+json}{Authorization: Basic dXNlcjpwYXNzd29yZA==}{User-Agent: Java/1.6.0_24}{Host: localhost:8080}{Connection: keep-alive}
+02-Aug-2013 11:35:55 org.springframework.boot.ops.audit.listener.AuditListener onApplicationEvent
+INFO: AuditEvent [timestamp=Fri Aug 02 11:35:55 BST 2013, principal=user, type=AUTHENTICATION_SUCCESS, data={details=org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null}]
+02-Aug-2013 11:35:55 sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@5b2246864 pairs: {null: HTTP/1.1 200 OK}{Content-Type: application/json;charset=UTF-8}{Transfer-Encoding: chunked}{Server: Jetty(8.1.9.v20130131)}
+02-Aug-2013 11:35:55 org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3b2ab74f: startup date [Fri Aug 02 11:35:54 BST 2013]; root of context hierarchy
+02-Aug-2013 11:35:55 org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@308c666a: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,sampleActuatorApplication,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,helloWorldService,sampleController,serviceProperties,propertySourcesBinder,org.springframework.boot.autoconfigure.MessageSourceAutoConfiguration,messageSource,org.springframework.boot.autoconfigure.PropertyPlaceholderAutoConfiguration,propertySourcesPlaceholderConfigurer,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedJetty,jettyEmbeddedServletContainerFactory,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$DispatcherServletConfiguration,dispatcherServlet,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration,embeddedServletContainerCustomizerBeanPostProcessor,org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration,faviconHandlerMapping,faviconRequestHandler,org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration,requestMappingHandlerMapping,mvcContentNegotiationManager,viewControllerHandlerMapping,beanNameHandlerMapping,resourceHandlerMapping,defaultServletHandlerMapping,requestMappingHandlerAdapter,mvcConversionService,mvcValidator,httpRequestHandlerAdapter,simpleControllerHandlerAdapter,handlerExceptionResolver,org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter,org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration,hiddenHttpMethodFilter,org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration,org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration,org.springframework.boot.autoconfigure.web.ServerPropertiesAutoConfiguration,org.springframework.boot.context.embedded.properties.ServerProperties,org.springframework.boot.ops.autoconfigure.AuditAutoConfiguration$AuditEventRepositoryConfiguration,auditEventRepository,org.springframework.boot.ops.autoconfigure.AuditAutoConfiguration,auditListener,authenticationAuditListener,authorizationAuditListener,org.springframework.boot.ops.autoconfigure.EndpointAutoConfiguration$InfoPropertiesConfiguration,org.springframework.boot.ops.autoconfigure.EndpointAutoConfiguration,environmentEndpoint,healthEndpoint,beansEndpoint,infoEndpoint,metricsEndpoint,traceEndpoint,dumpEndpoint,shutdownEndpoint,org.springframework.boot.ops.autoconfigure.ManagementServerPropertiesAutoConfiguration,org.springframework.actuate.properties.ManagementServerProperties,org.springframework.boot.ops.autoconfigure.EndpointWebMvcAutoConfiguration,endpointHandlerMapping,endpointHandlerAdapter,org.springframework.boot.ops.autoconfigure.ErrorMvcAutoConfiguration,basicErrorController,org.springframework.boot.ops.autoconfigure.MetricRepositoryAutoConfiguration,counterService,gaugeService,metricRepository,org.springframework.boot.ops.autoconfigure.MetricFilterAutoConfiguration,metricFilter,org.springframework.boot.ops.autoconfigure.SecurityAutoConfiguration$AuthenticationManagerConfiguration,authenticationManager,org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration,webSecurityExpressionHandler,springSecurityFilterChain,privilegeEvaluator,org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration,objectPostProcessor,org.springframework.boot.ops.autoconfigure.SecurityAutoConfiguration,org.springframework.actuate.properties.SecurityProperties,authenticationEventPublisher,webSecurityConfigurerAdapter,org.springframework.boot.ops.autoconfigure.TraceRepositoryAutoConfiguration,traceRepository,org.springframework.boot.ops.autoconfigure.TraceWebFilterAutoConfiguration,webRequestLoggingFilter]; root of factory hierarchy
+2013-08-02 11:35:55.756  INFO 24001 [main] --- o.e.jetty.server.handler.ContextHandler  : stopped o.e.j.w.WebAppContext{/,null}
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.138 sec - in org.springframework.boot.sample.ops.NoManagementSampleActuatorApplicationTests
+Running org.springframework.boot.sample.ops.UnsecureSampleActuatorApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::   v0.5.0.BUILD.SNAPSHOT
+
+02-Aug-2013 11:35:55 org.springframework.boot.StartupInfoLogger log
+INFO: Starting application on dsyer with PID 24001 (/home/dsyer/dev/bootstrap/boot/spring-boot-integration-tests/target/local-repo/org/springframework/boot/spring-boot/0.5.0.BUILD-SNAPSHOT/spring-boot-0.5.0.BUILD-SNAPSHOT.jar started by dsyer)
+02-Aug-2013 11:35:55 org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@752a2259: startup date [Fri Aug 02 11:35:55 BST 2013]; root of context hierarchy
+02-Aug-2013 11:35:55 org.springframework.beans.factory.support.DefaultListableBeanFactory registerBeanDefinition
+INFO: Overriding bean definition for bean 'propertySourcesBinder': replacing [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+02-Aug-2013 11:35:56 org.springframework.beans.factory.support.DefaultListableBeanFactory registerBeanDefinition
+INFO: Overriding bean definition for bean 'propertySourcesBinder': replacing [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+02-Aug-2013 11:35:56 org.springframework.beans.factory.support.DefaultListableBeanFactory registerBeanDefinition
+INFO: Overriding bean definition for bean 'propertySourcesBinder': replacing [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2013-08-02 11:35:56.106  INFO 24001 [pool-3-thread-1] --- org.eclipse.jetty.server.Server          : jetty-8.1.9.v20130131
+2013-08-02 11:35:56.106  INFO 24001 [pool-3-thread-1] --- /                                        : Initializing Spring embedded WebApplicationContext
+02-Aug-2013 11:35:56 org.springframework.boot.context.embedded.EmbeddedWebApplicationContext prepareEmbeddedWebApplicationContext
+INFO: Root WebApplicationContext: initialization completed in 258 ms
+02-Aug-2013 11:35:56 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/env] onto handler of type [class org.springframework.boot.ops.endpoint.EnvironmentEndpoint]
+02-Aug-2013 11:35:56 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/health] onto handler of type [class org.springframework.boot.ops.endpoint.HealthEndpoint]
+02-Aug-2013 11:35:56 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/beans] onto handler of type [class org.springframework.boot.ops.endpoint.BeansEndpoint]
+02-Aug-2013 11:35:56 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/info] onto handler of type [class org.springframework.boot.ops.endpoint.InfoEndpoint]
+02-Aug-2013 11:35:56 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/metrics] onto handler of type [class org.springframework.boot.ops.endpoint.MetricsEndpoint]
+02-Aug-2013 11:35:56 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/trace] onto handler of type [class org.springframework.boot.ops.endpoint.TraceEndpoint]
+02-Aug-2013 11:35:56 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/dump] onto handler of type [class org.springframework.boot.ops.endpoint.DumpEndpoint]
+02-Aug-2013 11:35:56 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/shutdown] onto handler of type [class org.springframework.boot.ops.endpoint.ShutdownEndpoint]
+02-Aug-2013 11:35:56 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/css/**'], []
+02-Aug-2013 11:35:56 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/js/**'], []
+02-Aug-2013 11:35:56 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/images/**'], []
+02-Aug-2013 11:35:56 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/**/favicon.ico'], []
+02-Aug-2013 11:35:56 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/health'], []
+02-Aug-2013 11:35:56 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/error'], []
+02-Aug-2013 11:35:56 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: org.springframework.security.web.util.AnyRequestMatcher@1, [org.springframework.security.web.context.SecurityContextPersistenceFilter@2026c088, org.springframework.security.web.authentication.logout.LogoutFilter@502a3135, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@204b7b1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3b7c680, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1648ff68, org.springframework.security.web.session.SessionManagementFilter@12781046, org.springframework.security.web.access.ExceptionTranslationFilter@8746d23]
+2013-08-02 11:35:56.337  INFO 24001 [pool-3-thread-1] --- /                                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+02-Aug-2013 11:35:56 org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'dispatcherServlet': initialization started
+02-Aug-2013 11:35:56 org.springframework.web.servlet.resource.ResourceHttpRequestHandler afterPropertiesSet
+WARNING: Locations list is empty. No resources will be served
+02-Aug-2013 11:35:56 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+02-Aug-2013 11:35:56 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/foo],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String org.springframework.boot.sample.ops.SampleController.foo()
+02-Aug-2013 11:35:56 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.String> org.springframework.boot.sample.ops.SampleController.helloWorld()
+02-Aug-2013 11:35:56 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.ops.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+02-Aug-2013 11:35:56 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[text/html],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.ops.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+02-Aug-2013 11:35:56 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+02-Aug-2013 11:35:56 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+02-Aug-2013 11:35:56 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+02-Aug-2013 11:35:56 org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'dispatcherServlet': initialization completed in 68 ms
+2013-08-02 11:35:56.408  INFO 24001 [pool-3-thread-1] --- o.e.jetty.server.AbstractConnector       : Started SelectChannelConnector@0.0.0.0:8080
+2013-08-02 11:35:56.443  INFO 24001 [pool-3-thread-1] --- o.e.jetty.server.AbstractConnector       : Started SelectChannelConnector@0.0.0.0:8080
+02-Aug-2013 11:35:56 sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@44d9973a5 pairs: {GET / HTTP/1.1: null}{Accept: application/json, application/*+json}{User-Agent: Java/1.6.0_24}{Host: localhost:8080}{Connection: keep-alive}
+02-Aug-2013 11:35:56 sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@67d479cf4 pairs: {null: HTTP/1.1 200 OK}{Content-Type: application/json;charset=UTF-8}{Transfer-Encoding: chunked}{Server: Jetty(8.1.9.v20130131)}
+02-Aug-2013 11:35:56 org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@752a2259: startup date [Fri Aug 02 11:35:55 BST 2013]; root of context hierarchy
+02-Aug-2013 11:35:56 org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@65f1a3a8: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,sampleActuatorApplication,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,helloWorldService,sampleController,serviceProperties,propertySourcesBinder,org.springframework.boot.autoconfigure.MessageSourceAutoConfiguration,messageSource,org.springframework.boot.autoconfigure.PropertyPlaceholderAutoConfiguration,propertySourcesPlaceholderConfigurer,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedJetty,jettyEmbeddedServletContainerFactory,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$DispatcherServletConfiguration,dispatcherServlet,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration,embeddedServletContainerCustomizerBeanPostProcessor,org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration,faviconHandlerMapping,faviconRequestHandler,org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration,requestMappingHandlerMapping,mvcContentNegotiationManager,viewControllerHandlerMapping,beanNameHandlerMapping,resourceHandlerMapping,defaultServletHandlerMapping,requestMappingHandlerAdapter,mvcConversionService,mvcValidator,httpRequestHandlerAdapter,simpleControllerHandlerAdapter,handlerExceptionResolver,org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter,org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration,hiddenHttpMethodFilter,org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration,org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration,org.springframework.boot.autoconfigure.web.ServerPropertiesAutoConfiguration,org.springframework.boot.context.embedded.properties.ServerProperties,org.springframework.boot.ops.autoconfigure.AuditAutoConfiguration$AuditEventRepositoryConfiguration,auditEventRepository,org.springframework.boot.ops.autoconfigure.AuditAutoConfiguration,auditListener,authenticationAuditListener,authorizationAuditListener,org.springframework.boot.ops.autoconfigure.EndpointAutoConfiguration$InfoPropertiesConfiguration,org.springframework.boot.ops.autoconfigure.EndpointAutoConfiguration,environmentEndpoint,healthEndpoint,beansEndpoint,infoEndpoint,metricsEndpoint,traceEndpoint,dumpEndpoint,shutdownEndpoint,org.springframework.boot.ops.autoconfigure.ManagementServerPropertiesAutoConfiguration,org.springframework.actuate.properties.ManagementServerProperties,org.springframework.boot.ops.autoconfigure.EndpointWebMvcAutoConfiguration,endpointHandlerMapping,endpointHandlerAdapter,org.springframework.boot.ops.autoconfigure.ErrorMvcAutoConfiguration,basicErrorController,org.springframework.boot.ops.autoconfigure.MetricRepositoryAutoConfiguration,counterService,gaugeService,metricRepository,org.springframework.boot.ops.autoconfigure.MetricFilterAutoConfiguration,metricFilter,org.springframework.boot.ops.autoconfigure.SecurityAutoConfiguration$AuthenticationManagerConfiguration,authenticationManager,org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration,webSecurityExpressionHandler,springSecurityFilterChain,privilegeEvaluator,org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration,objectPostProcessor,org.springframework.boot.ops.autoconfigure.SecurityAutoConfiguration,org.springframework.actuate.properties.SecurityProperties,authenticationEventPublisher,webSecurityConfigurerAdapter,org.springframework.boot.ops.autoconfigure.TraceRepositoryAutoConfiguration,traceRepository,org.springframework.boot.ops.autoconfigure.TraceWebFilterAutoConfiguration,webRequestLoggingFilter]; root of factory hierarchy
+2013-08-02 11:35:56.480  INFO 24001 [main] --- o.e.jetty.server.handler.ContextHandler  : stopped o.e.j.w.WebAppContext{/,null}
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.719 sec - in org.springframework.boot.sample.ops.UnsecureSampleActuatorApplicationTests
+Running org.springframework.boot.sample.ops.EndpointsPropertiesSampleActuatorApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::   v0.5.0.BUILD.SNAPSHOT
+
+02-Aug-2013 11:35:56 org.springframework.boot.StartupInfoLogger log
+INFO: Starting application on dsyer with PID 24001 (/home/dsyer/dev/bootstrap/boot/spring-boot-integration-tests/target/local-repo/org/springframework/boot/spring-boot/0.5.0.BUILD-SNAPSHOT/spring-boot-0.5.0.BUILD-SNAPSHOT.jar started by dsyer)
+02-Aug-2013 11:35:56 org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@134510ac: startup date [Fri Aug 02 11:35:56 BST 2013]; root of context hierarchy
+02-Aug-2013 11:35:56 org.springframework.beans.factory.support.DefaultListableBeanFactory registerBeanDefinition
+INFO: Overriding bean definition for bean 'propertySourcesBinder': replacing [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+02-Aug-2013 11:35:56 org.springframework.beans.factory.support.DefaultListableBeanFactory registerBeanDefinition
+INFO: Overriding bean definition for bean 'propertySourcesBinder': replacing [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+02-Aug-2013 11:35:56 org.springframework.beans.factory.support.DefaultListableBeanFactory registerBeanDefinition
+INFO: Overriding bean definition for bean 'propertySourcesBinder': replacing [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2013-08-02 11:35:56.861  INFO 24001 [pool-4-thread-1] --- org.eclipse.jetty.server.Server          : jetty-8.1.9.v20130131
+2013-08-02 11:35:56.862  INFO 24001 [pool-4-thread-1] --- /                                        : Initializing Spring embedded WebApplicationContext
+02-Aug-2013 11:35:56 org.springframework.boot.context.embedded.EmbeddedWebApplicationContext prepareEmbeddedWebApplicationContext
+INFO: Root WebApplicationContext: initialization completed in 276 ms
+02-Aug-2013 11:35:57 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/env] onto handler of type [class org.springframework.boot.ops.endpoint.EnvironmentEndpoint]
+02-Aug-2013 11:35:57 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/health] onto handler of type [class org.springframework.boot.ops.endpoint.HealthEndpoint]
+02-Aug-2013 11:35:57 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/beans] onto handler of type [class org.springframework.boot.ops.endpoint.BeansEndpoint]
+02-Aug-2013 11:35:57 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/info] onto handler of type [class org.springframework.boot.ops.endpoint.InfoEndpoint]
+02-Aug-2013 11:35:57 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/metrics] onto handler of type [class org.springframework.boot.ops.endpoint.MetricsEndpoint]
+02-Aug-2013 11:35:57 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/trace] onto handler of type [class org.springframework.boot.ops.endpoint.TraceEndpoint]
+02-Aug-2013 11:35:57 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/dump] onto handler of type [class org.springframework.boot.ops.endpoint.DumpEndpoint]
+02-Aug-2013 11:35:57 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/shutdown] onto handler of type [class org.springframework.boot.ops.endpoint.ShutdownEndpoint]
+02-Aug-2013 11:35:57 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/css/**'], []
+02-Aug-2013 11:35:57 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/js/**'], []
+02-Aug-2013 11:35:57 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/images/**'], []
+02-Aug-2013 11:35:57 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/**/favicon.ico'], []
+02-Aug-2013 11:35:57 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/health'], []
+02-Aug-2013 11:35:57 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/oops'], []
+02-Aug-2013 11:35:57 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: org.springframework.security.config.annotation.web.builders.HttpSecurity$OrRequestMatcher@56f7ce53, [org.springframework.security.web.context.SecurityContextPersistenceFilter@270ad7c0, org.springframework.security.web.authentication.logout.LogoutFilter@38da9246, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@15b94ed3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@38e609c9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@68c884e, org.springframework.security.web.session.SessionManagementFilter@7448bc3d, org.springframework.security.web.access.ExceptionTranslationFilter@533e846f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2d68be1b]
+2013-08-02 11:35:57.063  INFO 24001 [pool-4-thread-1] --- /                                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+02-Aug-2013 11:35:57 org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'dispatcherServlet': initialization started
+02-Aug-2013 11:35:57 org.springframework.web.servlet.resource.ResourceHttpRequestHandler afterPropertiesSet
+WARNING: Locations list is empty. No resources will be served
+02-Aug-2013 11:35:57 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+02-Aug-2013 11:35:57 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/foo],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String org.springframework.boot.sample.ops.SampleController.foo()
+02-Aug-2013 11:35:57 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.String> org.springframework.boot.sample.ops.SampleController.helloWorld()
+02-Aug-2013 11:35:57 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/oops],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.ops.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+02-Aug-2013 11:35:57 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/oops],methods=[],params=[],headers=[],consumes=[],produces=[text/html],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.ops.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+02-Aug-2013 11:35:57 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+02-Aug-2013 11:35:57 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+02-Aug-2013 11:35:57 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+02-Aug-2013 11:35:57 org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'dispatcherServlet': initialization completed in 72 ms
+2013-08-02 11:35:57.138  INFO 24001 [pool-4-thread-1] --- o.e.jetty.server.AbstractConnector       : Started SelectChannelConnector@0.0.0.0:8080
+2013-08-02 11:35:57.162  INFO 24001 [pool-4-thread-1] --- o.e.jetty.server.AbstractConnector       : Started SelectChannelConnector@0.0.0.0:8080
+02-Aug-2013 11:35:57 sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@6f54c08a6 pairs: {GET /oops HTTP/1.1: null}{Accept: application/json, application/*+json}{Authorization: Basic dXNlcjpwYXNzd29yZA==}{User-Agent: Java/1.6.0_24}{Host: localhost:8080}{Connection: keep-alive}
+02-Aug-2013 11:35:57 sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@41a80e5a4 pairs: {null: HTTP/1.1 200 OK}{Content-Type: application/json;charset=UTF-8}{Transfer-Encoding: chunked}{Server: Jetty(8.1.9.v20130131)}
+02-Aug-2013 11:35:57 org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@134510ac: startup date [Fri Aug 02 11:35:56 BST 2013]; root of context hierarchy
+02-Aug-2013 11:35:57 org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@36422510: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,sampleActuatorApplication,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,helloWorldService,sampleController,serviceProperties,propertySourcesBinder,org.springframework.boot.autoconfigure.MessageSourceAutoConfiguration,messageSource,org.springframework.boot.autoconfigure.PropertyPlaceholderAutoConfiguration,propertySourcesPlaceholderConfigurer,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedJetty,jettyEmbeddedServletContainerFactory,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$DispatcherServletConfiguration,dispatcherServlet,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration,embeddedServletContainerCustomizerBeanPostProcessor,org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration,faviconHandlerMapping,faviconRequestHandler,org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration,requestMappingHandlerMapping,mvcContentNegotiationManager,viewControllerHandlerMapping,beanNameHandlerMapping,resourceHandlerMapping,defaultServletHandlerMapping,requestMappingHandlerAdapter,mvcConversionService,mvcValidator,httpRequestHandlerAdapter,simpleControllerHandlerAdapter,handlerExceptionResolver,org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter,org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration,hiddenHttpMethodFilter,org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration,org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration,org.springframework.boot.autoconfigure.web.ServerPropertiesAutoConfiguration,org.springframework.boot.context.embedded.properties.ServerProperties,org.springframework.boot.ops.autoconfigure.AuditAutoConfiguration$AuditEventRepositoryConfiguration,auditEventRepository,org.springframework.boot.ops.autoconfigure.AuditAutoConfiguration,auditListener,authenticationAuditListener,authorizationAuditListener,org.springframework.boot.ops.autoconfigure.EndpointAutoConfiguration$InfoPropertiesConfiguration,org.springframework.boot.ops.autoconfigure.EndpointAutoConfiguration,environmentEndpoint,healthEndpoint,beansEndpoint,infoEndpoint,metricsEndpoint,traceEndpoint,dumpEndpoint,shutdownEndpoint,org.springframework.boot.ops.autoconfigure.ManagementServerPropertiesAutoConfiguration,org.springframework.actuate.properties.ManagementServerProperties,org.springframework.boot.ops.autoconfigure.EndpointWebMvcAutoConfiguration,endpointHandlerMapping,endpointHandlerAdapter,org.springframework.boot.ops.autoconfigure.ErrorMvcAutoConfiguration,basicErrorController,org.springframework.boot.ops.autoconfigure.MetricRepositoryAutoConfiguration,counterService,gaugeService,metricRepository,org.springframework.boot.ops.autoconfigure.MetricFilterAutoConfiguration,metricFilter,org.springframework.boot.ops.autoconfigure.SecurityAutoConfiguration$AuthenticationManagerConfiguration,authenticationManager,org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration,webSecurityExpressionHandler,springSecurityFilterChain,privilegeEvaluator,org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration,objectPostProcessor,org.springframework.boot.ops.autoconfigure.SecurityAutoConfiguration,org.springframework.actuate.properties.SecurityProperties,authenticationEventPublisher,webSecurityConfigurerAdapter,org.springframework.boot.ops.autoconfigure.TraceRepositoryAutoConfiguration,traceRepository,org.springframework.boot.ops.autoconfigure.TraceWebFilterAutoConfiguration,webRequestLoggingFilter]; root of factory hierarchy
+2013-08-02 11:35:57.208  INFO 24001 [main] --- o.e.jetty.server.handler.ContextHandler  : stopped o.e.j.w.WebAppContext{/,null}
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.716 sec - in org.springframework.boot.sample.ops.EndpointsPropertiesSampleActuatorApplicationTests
+Running org.springframework.boot.sample.ops.SampleActuatorApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::   v0.5.0.BUILD.SNAPSHOT
+
+02-Aug-2013 11:35:57 org.springframework.boot.StartupInfoLogger log
+INFO: Starting application on dsyer with PID 24001 (/home/dsyer/dev/bootstrap/boot/spring-boot-integration-tests/target/local-repo/org/springframework/boot/spring-boot/0.5.0.BUILD-SNAPSHOT/spring-boot-0.5.0.BUILD-SNAPSHOT.jar started by dsyer)
+02-Aug-2013 11:35:57 org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@70d11f32: startup date [Fri Aug 02 11:35:57 BST 2013]; root of context hierarchy
+02-Aug-2013 11:35:57 org.springframework.beans.factory.support.DefaultListableBeanFactory registerBeanDefinition
+INFO: Overriding bean definition for bean 'propertySourcesBinder': replacing [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+02-Aug-2013 11:35:57 org.springframework.beans.factory.support.DefaultListableBeanFactory registerBeanDefinition
+INFO: Overriding bean definition for bean 'propertySourcesBinder': replacing [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+02-Aug-2013 11:35:57 org.springframework.beans.factory.support.DefaultListableBeanFactory registerBeanDefinition
+INFO: Overriding bean definition for bean 'propertySourcesBinder': replacing [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2013-08-02 11:35:57.509  INFO 24001 [pool-5-thread-1] --- org.eclipse.jetty.server.Server          : jetty-8.1.9.v20130131
+2013-08-02 11:35:57.510  INFO 24001 [pool-5-thread-1] --- /                                        : Initializing Spring embedded WebApplicationContext
+02-Aug-2013 11:35:57 org.springframework.boot.context.embedded.EmbeddedWebApplicationContext prepareEmbeddedWebApplicationContext
+INFO: Root WebApplicationContext: initialization completed in 208 ms
+02-Aug-2013 11:35:57 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/env] onto handler of type [class org.springframework.boot.ops.endpoint.EnvironmentEndpoint]
+02-Aug-2013 11:35:57 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/health] onto handler of type [class org.springframework.boot.ops.endpoint.HealthEndpoint]
+02-Aug-2013 11:35:57 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/beans] onto handler of type [class org.springframework.boot.ops.endpoint.BeansEndpoint]
+02-Aug-2013 11:35:57 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/info] onto handler of type [class org.springframework.boot.ops.endpoint.InfoEndpoint]
+02-Aug-2013 11:35:57 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/metrics] onto handler of type [class org.springframework.boot.ops.endpoint.MetricsEndpoint]
+02-Aug-2013 11:35:57 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/trace] onto handler of type [class org.springframework.boot.ops.endpoint.TraceEndpoint]
+02-Aug-2013 11:35:57 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/dump] onto handler of type [class org.springframework.boot.ops.endpoint.DumpEndpoint]
+02-Aug-2013 11:35:57 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/shutdown] onto handler of type [class org.springframework.boot.ops.endpoint.ShutdownEndpoint]
+02-Aug-2013 11:35:57 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/css/**'], []
+02-Aug-2013 11:35:57 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/js/**'], []
+02-Aug-2013 11:35:57 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/images/**'], []
+02-Aug-2013 11:35:57 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/**/favicon.ico'], []
+02-Aug-2013 11:35:57 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/health'], []
+02-Aug-2013 11:35:57 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/error'], []
+02-Aug-2013 11:35:57 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: org.springframework.security.config.annotation.web.builders.HttpSecurity$OrRequestMatcher@cd73c3c, [org.springframework.security.web.context.SecurityContextPersistenceFilter@6b38dba, org.springframework.security.web.authentication.logout.LogoutFilter@761db1c5, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@17823918, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@667262b6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5faecf45, org.springframework.security.web.session.SessionManagementFilter@4da9ec16, org.springframework.security.web.access.ExceptionTranslationFilter@4ecac02f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@610f7612]
+2013-08-02 11:35:57.680  INFO 24001 [pool-5-thread-1] --- /                                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+02-Aug-2013 11:35:57 org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'dispatcherServlet': initialization started
+02-Aug-2013 11:35:57 org.springframework.web.servlet.resource.ResourceHttpRequestHandler afterPropertiesSet
+WARNING: Locations list is empty. No resources will be served
+02-Aug-2013 11:35:57 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+02-Aug-2013 11:35:57 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/foo],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String org.springframework.boot.sample.ops.SampleController.foo()
+02-Aug-2013 11:35:57 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.String> org.springframework.boot.sample.ops.SampleController.helloWorld()
+02-Aug-2013 11:35:57 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.ops.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+02-Aug-2013 11:35:57 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[text/html],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.ops.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+02-Aug-2013 11:35:57 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+02-Aug-2013 11:35:57 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+02-Aug-2013 11:35:57 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+02-Aug-2013 11:35:57 org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'dispatcherServlet': initialization completed in 57 ms
+2013-08-02 11:35:57.739  INFO 24001 [pool-5-thread-1] --- o.e.jetty.server.AbstractConnector       : Started SelectChannelConnector@0.0.0.0:8080
+2013-08-02 11:35:57.763  INFO 24001 [pool-5-thread-1] --- o.e.jetty.server.AbstractConnector       : Started SelectChannelConnector@0.0.0.0:8080
+02-Aug-2013 11:35:57 sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@e1641c06 pairs: {GET /env HTTP/1.1: null}{Accept: application/json, application/*+json}{Authorization: Basic dXNlcjpwYXNzd29yZA==}{User-Agent: Java/1.6.0_24}{Host: localhost:8080}{Connection: keep-alive}
+02-Aug-2013 11:35:57 org.springframework.boot.ops.audit.listener.AuditListener onApplicationEvent
+INFO: AuditEvent [timestamp=Fri Aug 02 11:35:57 BST 2013, principal=user, type=AUTHENTICATION_SUCCESS, data={details=org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null}]
+02-Aug-2013 11:35:57 sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@451dfada4 pairs: {null: HTTP/1.1 200 OK}{Content-Type: application/json;charset=UTF-8}{Transfer-Encoding: chunked}{Server: Jetty(8.1.9.v20130131)}
+02-Aug-2013 11:35:57 sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@1fc822086 pairs: {GET /beans HTTP/1.1: null}{Accept: application/json, application/*+json}{Authorization: Basic dXNlcjpwYXNzd29yZA==}{User-Agent: Java/1.6.0_24}{Host: localhost:8080}{Connection: keep-alive}
+02-Aug-2013 11:35:57 org.springframework.boot.ops.audit.listener.AuditListener onApplicationEvent
+INFO: AuditEvent [timestamp=Fri Aug 02 11:35:57 BST 2013, principal=user, type=AUTHENTICATION_SUCCESS, data={details=org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null}]
+02-Aug-2013 11:35:57 sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@3b8964294 pairs: {null: HTTP/1.1 200 OK}{Content-Length: 24228}{Content-Type: application/json}{Server: Jetty(8.1.9.v20130131)}
+02-Aug-2013 11:35:57 sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@6d0cecb26 pairs: {GET / HTTP/1.1: null}{Accept: application/json, application/*+json}{Authorization: Basic dXNlcjpwYXNzd29yZA==}{User-Agent: Java/1.6.0_24}{Host: localhost:8080}{Connection: keep-alive}
+02-Aug-2013 11:35:57 org.springframework.boot.ops.audit.listener.AuditListener onApplicationEvent
+INFO: AuditEvent [timestamp=Fri Aug 02 11:35:57 BST 2013, principal=user, type=AUTHENTICATION_SUCCESS, data={details=org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null}]
+02-Aug-2013 11:35:57 sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@21ef48fb4 pairs: {null: HTTP/1.1 200 OK}{Content-Type: application/json;charset=UTF-8}{Transfer-Encoding: chunked}{Server: Jetty(8.1.9.v20130131)}
+02-Aug-2013 11:35:57 sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@64a068246 pairs: {GET / HTTP/1.1: null}{Accept: application/json, application/*+json}{Authorization: Basic dXNlcjpwYXNzd29yZA==}{User-Agent: Java/1.6.0_24}{Host: localhost:8080}{Connection: keep-alive}
+02-Aug-2013 11:35:57 org.springframework.boot.ops.audit.listener.AuditListener onApplicationEvent
+INFO: AuditEvent [timestamp=Fri Aug 02 11:35:57 BST 2013, principal=user, type=AUTHENTICATION_SUCCESS, data={details=org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null}]
+02-Aug-2013 11:35:57 sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@6deea96c4 pairs: {null: HTTP/1.1 200 OK}{Content-Type: application/json;charset=UTF-8}{Transfer-Encoding: chunked}{Server: Jetty(8.1.9.v20130131)}
+02-Aug-2013 11:35:57 sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@2ce07e6b6 pairs: {GET /metrics HTTP/1.1: null}{Accept: application/json, application/*+json}{Authorization: Basic dXNlcjpwYXNzd29yZA==}{User-Agent: Java/1.6.0_24}{Host: localhost:8080}{Connection: keep-alive}
+02-Aug-2013 11:35:57 org.springframework.boot.ops.audit.listener.AuditListener onApplicationEvent
+INFO: AuditEvent [timestamp=Fri Aug 02 11:35:57 BST 2013, principal=user, type=AUTHENTICATION_SUCCESS, data={details=org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null}]
+02-Aug-2013 11:35:57 sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@7fa0d1114 pairs: {null: HTTP/1.1 200 OK}{Content-Type: application/json;charset=UTF-8}{Transfer-Encoding: chunked}{Server: Jetty(8.1.9.v20130131)}
+02-Aug-2013 11:35:57 sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@16fdf48d6 pairs: {GET /foo HTTP/1.1: null}{Accept: application/json, application/*+json}{Authorization: Basic dXNlcjpwYXNzd29yZA==}{User-Agent: Java/1.6.0_24}{Host: localhost:8080}{Connection: keep-alive}
+02-Aug-2013 11:35:57 org.springframework.boot.ops.audit.listener.AuditListener onApplicationEvent
+INFO: AuditEvent [timestamp=Fri Aug 02 11:35:57 BST 2013, principal=user, type=AUTHENTICATION_SUCCESS, data={details=org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null}]
+2013-08-02 11:35:57.882  WARN 24001 [qtp1656303042-67] --- o.eclipse.jetty.servlet.ServletHandler   : 
+
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.IllegalArgumentException: Server error
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:958)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:822)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:770)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:669)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1448)
+	at org.springframework.boot.ops.trace.WebRequestTraceFilter.doFilter(WebRequestTraceFilter.java:111)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:118)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:84)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:103)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:150)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:45)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilter(BasicAuthenticationFilter.java:201)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:192)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:160)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:108)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419)
+	at org.springframework.boot.ops.autoconfigure.MetricFilterAutoConfiguration$MetricsFilter.doFilter(MetricFilterAutoConfiguration.java:97)
+	at org.springframework.boot.ops.autoconfigure.MetricFilterAutoConfiguration$MetricsFilter.doFilter(MetricFilterAutoConfiguration.java:82)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:368)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:488)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:932)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:994)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:640)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:679)
+Caused by: java.lang.IllegalArgumentException: Server error
+	at org.springframework.boot.sample.ops.SampleController.foo(SampleController.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:219)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:747)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:688)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:856)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:946)
+	... 57 common frames omitted
+
+2013-08-02 11:35:57.883  WARN 24001 [qtp1656303042-67] --- o.eclipse.jetty.servlet.ServletHandler   : /foo
+
+java.lang.IllegalArgumentException: Server error
+	at org.springframework.boot.sample.ops.SampleController.foo(SampleController.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:219)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:747)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:688)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:856)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:946)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:822)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:770)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:669)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1448)
+	at org.springframework.boot.ops.trace.WebRequestTraceFilter.doFilter(WebRequestTraceFilter.java:111)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:118)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:84)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:103)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:150)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:45)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilter(BasicAuthenticationFilter.java:201)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:87)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:342)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:192)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:160)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:108)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419)
+	at org.springframework.boot.ops.autoconfigure.MetricFilterAutoConfiguration$MetricsFilter.doFilter(MetricFilterAutoConfiguration.java:97)
+	at org.springframework.boot.ops.autoconfigure.MetricFilterAutoConfiguration$MetricsFilter.doFilter(MetricFilterAutoConfiguration.java:82)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:368)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:488)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:932)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:994)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:640)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:679)
+
+02-Aug-2013 11:35:57 org.springframework.boot.ops.web.BasicErrorController error
+SEVERE: java.lang.IllegalArgumentException: Server error
+02-Aug-2013 11:35:57 sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@3be4d6ef4 pairs: {null: HTTP/1.1 500 Server error}{Content-Type: application/json;charset=UTF-8}{Transfer-Encoding: chunked}{Server: Jetty(8.1.9.v20130131)}
+02-Aug-2013 11:35:57 org.springframework.web.client.RestTemplate handleResponseError
+WARNING: GET request for "http://localhost:8080/foo" resulted in 500 (Server error); invoking error handler
+02-Aug-2013 11:35:57 sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@777d57d65 pairs: {GET /health HTTP/1.1: null}{Accept: text/plain, application/json, application/*+json, */*}{User-Agent: Java/1.6.0_24}{Host: localhost:8080}{Connection: keep-alive}
+02-Aug-2013 11:35:57 sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@4611dfe34 pairs: {null: HTTP/1.1 200 OK}{Content-Length: 2}{Content-Type: text/plain;charset=ISO-8859-1}{Server: Jetty(8.1.9.v20130131)}
+02-Aug-2013 11:35:57 sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@2f0f94a05 pairs: {GET /error HTTP/1.1: null}{Accept: application/json, application/*+json}{User-Agent: Java/1.6.0_24}{Host: localhost:8080}{Connection: keep-alive}
+02-Aug-2013 11:35:57 sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@3dffb2eb4 pairs: {null: HTTP/1.1 200 OK}{Content-Type: application/json;charset=UTF-8}{Transfer-Encoding: chunked}{Server: Jetty(8.1.9.v20130131)}
+02-Aug-2013 11:35:57 sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@5e3b82195 pairs: {GET / HTTP/1.1: null}{Accept: application/json, application/*+json}{User-Agent: Java/1.6.0_24}{Host: localhost:8080}{Connection: keep-alive}
+02-Aug-2013 11:35:57 org.springframework.context.support.ResourceBundleMessageSource getResourceBundle
+WARNING: ResourceBundle [messages] not found for MessageSource: Can't find bundle for base name messages, locale en_GB
+02-Aug-2013 11:35:57 org.springframework.boot.ops.audit.listener.AuditListener onApplicationEvent
+INFO: AuditEvent [timestamp=Fri Aug 02 11:35:57 BST 2013, principal=<unknown>, type=AUTHENTICATION_FAILURE, data={message=An Authentication object was not found in the SecurityContext, type=org.springframework.security.authentication.AuthenticationCredentialsNotFoundException}]
+02-Aug-2013 11:35:57 sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@294b84ad5 pairs: {null: HTTP/1.1 401 An Authentication object was not found in the SecurityContext}{WWW-Authenticate: Basic realm="Spring"}{Content-Type: application/json;charset=UTF-8}{Transfer-Encoding: chunked}{Server: Jetty(8.1.9.v20130131)}
+02-Aug-2013 11:35:57 org.springframework.web.client.RestTemplate handleResponseError
+WARNING: GET request for "http://localhost:8080" resulted in 401 (An Authentication object was not found in the SecurityContext); invoking error handler
+02-Aug-2013 11:35:57 org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@70d11f32: startup date [Fri Aug 02 11:35:57 BST 2013]; root of context hierarchy
+02-Aug-2013 11:35:57 org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@60d8431c: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,sampleActuatorApplication,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,helloWorldService,sampleController,serviceProperties,propertySourcesBinder,org.springframework.boot.autoconfigure.MessageSourceAutoConfiguration,messageSource,org.springframework.boot.autoconfigure.PropertyPlaceholderAutoConfiguration,propertySourcesPlaceholderConfigurer,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedJetty,jettyEmbeddedServletContainerFactory,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$DispatcherServletConfiguration,dispatcherServlet,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration,embeddedServletContainerCustomizerBeanPostProcessor,org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration,faviconHandlerMapping,faviconRequestHandler,org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration,requestMappingHandlerMapping,mvcContentNegotiationManager,viewControllerHandlerMapping,beanNameHandlerMapping,resourceHandlerMapping,defaultServletHandlerMapping,requestMappingHandlerAdapter,mvcConversionService,mvcValidator,httpRequestHandlerAdapter,simpleControllerHandlerAdapter,handlerExceptionResolver,org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter,org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration,hiddenHttpMethodFilter,org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration,org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration,org.springframework.boot.autoconfigure.web.ServerPropertiesAutoConfiguration,org.springframework.boot.context.embedded.properties.ServerProperties,org.springframework.boot.ops.autoconfigure.AuditAutoConfiguration$AuditEventRepositoryConfiguration,auditEventRepository,org.springframework.boot.ops.autoconfigure.AuditAutoConfiguration,auditListener,authenticationAuditListener,authorizationAuditListener,org.springframework.boot.ops.autoconfigure.EndpointAutoConfiguration$InfoPropertiesConfiguration,org.springframework.boot.ops.autoconfigure.EndpointAutoConfiguration,environmentEndpoint,healthEndpoint,beansEndpoint,infoEndpoint,metricsEndpoint,traceEndpoint,dumpEndpoint,shutdownEndpoint,org.springframework.boot.ops.autoconfigure.ManagementServerPropertiesAutoConfiguration,org.springframework.actuate.properties.ManagementServerProperties,org.springframework.boot.ops.autoconfigure.EndpointWebMvcAutoConfiguration,endpointHandlerMapping,endpointHandlerAdapter,org.springframework.boot.ops.autoconfigure.ErrorMvcAutoConfiguration,basicErrorController,org.springframework.boot.ops.autoconfigure.MetricRepositoryAutoConfiguration,counterService,gaugeService,metricRepository,org.springframework.boot.ops.autoconfigure.MetricFilterAutoConfiguration,metricFilter,org.springframework.boot.ops.autoconfigure.SecurityAutoConfiguration$AuthenticationManagerConfiguration,authenticationManager,org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration,webSecurityExpressionHandler,springSecurityFilterChain,privilegeEvaluator,org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration,objectPostProcessor,org.springframework.boot.ops.autoconfigure.SecurityAutoConfiguration,org.springframework.actuate.properties.SecurityProperties,authenticationEventPublisher,webSecurityConfigurerAdapter,org.springframework.boot.ops.autoconfigure.TraceRepositoryAutoConfiguration,traceRepository,org.springframework.boot.ops.autoconfigure.TraceWebFilterAutoConfiguration,webRequestLoggingFilter]; root of factory hierarchy
+2013-08-02 11:35:57.946  INFO 24001 [main] --- o.e.jetty.server.handler.ContextHandler  : stopped o.e.j.w.WebAppContext{/,null}
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.729 sec - in org.springframework.boot.sample.ops.SampleActuatorApplicationTests
+Running org.springframework.boot.sample.ops.ShutdownSampleActuatorApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::   v0.5.0.BUILD.SNAPSHOT
+
+02-Aug-2013 11:35:58 org.springframework.boot.StartupInfoLogger log
+INFO: Starting application on dsyer with PID 24001 (/home/dsyer/dev/bootstrap/boot/spring-boot-integration-tests/target/local-repo/org/springframework/boot/spring-boot/0.5.0.BUILD-SNAPSHOT/spring-boot-0.5.0.BUILD-SNAPSHOT.jar started by dsyer)
+02-Aug-2013 11:35:58 org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6a5a7ff7: startup date [Fri Aug 02 11:35:58 BST 2013]; root of context hierarchy
+02-Aug-2013 11:35:58 org.springframework.beans.factory.support.DefaultListableBeanFactory registerBeanDefinition
+INFO: Overriding bean definition for bean 'propertySourcesBinder': replacing [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+02-Aug-2013 11:35:58 org.springframework.beans.factory.support.DefaultListableBeanFactory registerBeanDefinition
+INFO: Overriding bean definition for bean 'propertySourcesBinder': replacing [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+02-Aug-2013 11:35:58 org.springframework.beans.factory.support.DefaultListableBeanFactory registerBeanDefinition
+INFO: Overriding bean definition for bean 'propertySourcesBinder': replacing [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2013-08-02 11:35:58.212  INFO 24001 [pool-6-thread-1] --- org.eclipse.jetty.server.Server          : jetty-8.1.9.v20130131
+2013-08-02 11:35:58.213  INFO 24001 [pool-6-thread-1] --- /                                        : Initializing Spring embedded WebApplicationContext
+02-Aug-2013 11:35:58 org.springframework.boot.context.embedded.EmbeddedWebApplicationContext prepareEmbeddedWebApplicationContext
+INFO: Root WebApplicationContext: initialization completed in 166 ms
+02-Aug-2013 11:35:58 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/env] onto handler of type [class org.springframework.boot.ops.endpoint.EnvironmentEndpoint]
+02-Aug-2013 11:35:58 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/health] onto handler of type [class org.springframework.boot.ops.endpoint.HealthEndpoint]
+02-Aug-2013 11:35:58 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/beans] onto handler of type [class org.springframework.boot.ops.endpoint.BeansEndpoint]
+02-Aug-2013 11:35:58 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/info] onto handler of type [class org.springframework.boot.ops.endpoint.InfoEndpoint]
+02-Aug-2013 11:35:58 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/metrics] onto handler of type [class org.springframework.boot.ops.endpoint.MetricsEndpoint]
+02-Aug-2013 11:35:58 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/trace] onto handler of type [class org.springframework.boot.ops.endpoint.TraceEndpoint]
+02-Aug-2013 11:35:58 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/dump] onto handler of type [class org.springframework.boot.ops.endpoint.DumpEndpoint]
+02-Aug-2013 11:35:58 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/shutdown] onto handler of type [class org.springframework.boot.ops.endpoint.ShutdownEndpoint]
+02-Aug-2013 11:35:58 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/css/**'], []
+02-Aug-2013 11:35:58 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/js/**'], []
+02-Aug-2013 11:35:58 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/images/**'], []
+02-Aug-2013 11:35:58 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/**/favicon.ico'], []
+02-Aug-2013 11:35:58 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/health'], []
+02-Aug-2013 11:35:58 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/error'], []
+02-Aug-2013 11:35:58 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: org.springframework.security.config.annotation.web.builders.HttpSecurity$OrRequestMatcher@2a97cec, [org.springframework.security.web.context.SecurityContextPersistenceFilter@45486b51, org.springframework.security.web.authentication.logout.LogoutFilter@157db660, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@705063a5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2dbe1f3e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1cf536e8, org.springframework.security.web.session.SessionManagementFilter@26e7c832, org.springframework.security.web.access.ExceptionTranslationFilter@3b085e92, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2278e185]
+2013-08-02 11:35:58.429  INFO 24001 [pool-6-thread-1] --- /                                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+02-Aug-2013 11:35:58 org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'dispatcherServlet': initialization started
+02-Aug-2013 11:35:58 org.springframework.web.servlet.resource.ResourceHttpRequestHandler afterPropertiesSet
+WARNING: Locations list is empty. No resources will be served
+02-Aug-2013 11:35:58 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+02-Aug-2013 11:35:58 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/foo],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String org.springframework.boot.sample.ops.SampleController.foo()
+02-Aug-2013 11:35:58 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.String> org.springframework.boot.sample.ops.SampleController.helloWorld()
+02-Aug-2013 11:35:58 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.ops.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+02-Aug-2013 11:35:58 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[text/html],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.ops.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+02-Aug-2013 11:35:58 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+02-Aug-2013 11:35:58 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+02-Aug-2013 11:35:58 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+02-Aug-2013 11:35:58 org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'dispatcherServlet': initialization completed in 72 ms
+2013-08-02 11:35:58.504  INFO 24001 [pool-6-thread-1] --- o.e.jetty.server.AbstractConnector       : Started SelectChannelConnector@0.0.0.0:8080
+2013-08-02 11:35:58.531  INFO 24001 [pool-6-thread-1] --- o.e.jetty.server.AbstractConnector       : Started SelectChannelConnector@0.0.0.0:8080
+02-Aug-2013 11:35:58 sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@4eb98fe16 pairs: {GET / HTTP/1.1: null}{Accept: application/json, application/*+json}{Authorization: Basic dXNlcjpwYXNzd29yZA==}{User-Agent: Java/1.6.0_24}{Host: localhost:8080}{Connection: keep-alive}
+02-Aug-2013 11:35:58 org.springframework.boot.ops.audit.listener.AuditListener onApplicationEvent
+INFO: AuditEvent [timestamp=Fri Aug 02 11:35:58 BST 2013, principal=user, type=AUTHENTICATION_SUCCESS, data={details=org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null}]
+02-Aug-2013 11:35:58 sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@a0834e74 pairs: {null: HTTP/1.1 200 OK}{Content-Type: application/json;charset=UTF-8}{Transfer-Encoding: chunked}{Server: Jetty(8.1.9.v20130131)}
+02-Aug-2013 11:35:58 sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@7821f46a8 pairs: {POST /shutdown HTTP/1.1: null}{Accept: application/json, application/*+json}{Authorization: Basic dXNlcjpwYXNzd29yZA==}{User-Agent: Java/1.6.0_24}{Host: localhost:8080}{Connection: keep-alive}{Content-type: application/x-www-form-urlencoded}{Content-Length: 0}
+02-Aug-2013 11:35:58 org.springframework.boot.ops.audit.listener.AuditListener onApplicationEvent
+INFO: AuditEvent [timestamp=Fri Aug 02 11:35:58 BST 2013, principal=user, type=AUTHENTICATION_SUCCESS, data={details=org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null}]
+02-Aug-2013 11:35:58 sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@1afb7ac74 pairs: {null: HTTP/1.1 200 OK}{Content-Type: application/json;charset=UTF-8}{Transfer-Encoding: chunked}{Server: Jetty(8.1.9.v20130131)}
+02-Aug-2013 11:35:58 org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6a5a7ff7: startup date [Fri Aug 02 11:35:58 BST 2013]; root of context hierarchy
+02-Aug-2013 11:35:58 org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@510bfe2c: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,sampleActuatorApplication,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,helloWorldService,sampleController,serviceProperties,propertySourcesBinder,org.springframework.boot.autoconfigure.MessageSourceAutoConfiguration,messageSource,org.springframework.boot.autoconfigure.PropertyPlaceholderAutoConfiguration,propertySourcesPlaceholderConfigurer,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedJetty,jettyEmbeddedServletContainerFactory,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$DispatcherServletConfiguration,dispatcherServlet,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration,embeddedServletContainerCustomizerBeanPostProcessor,org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration,faviconHandlerMapping,faviconRequestHandler,org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration,requestMappingHandlerMapping,mvcContentNegotiationManager,viewControllerHandlerMapping,beanNameHandlerMapping,resourceHandlerMapping,defaultServletHandlerMapping,requestMappingHandlerAdapter,mvcConversionService,mvcValidator,httpRequestHandlerAdapter,simpleControllerHandlerAdapter,handlerExceptionResolver,org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter,org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration,hiddenHttpMethodFilter,org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration,org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration,org.springframework.boot.autoconfigure.web.ServerPropertiesAutoConfiguration,org.springframework.boot.context.embedded.properties.ServerProperties,org.springframework.boot.ops.autoconfigure.AuditAutoConfiguration$AuditEventRepositoryConfiguration,auditEventRepository,org.springframework.boot.ops.autoconfigure.AuditAutoConfiguration,auditListener,authenticationAuditListener,authorizationAuditListener,org.springframework.boot.ops.autoconfigure.EndpointAutoConfiguration$InfoPropertiesConfiguration,org.springframework.boot.ops.autoconfigure.EndpointAutoConfiguration,environmentEndpoint,healthEndpoint,beansEndpoint,infoEndpoint,metricsEndpoint,traceEndpoint,dumpEndpoint,shutdownEndpoint,org.springframework.boot.ops.autoconfigure.ManagementServerPropertiesAutoConfiguration,org.springframework.actuate.properties.ManagementServerProperties,org.springframework.boot.ops.autoconfigure.EndpointWebMvcAutoConfiguration,endpointHandlerMapping,endpointHandlerAdapter,org.springframework.boot.ops.autoconfigure.ErrorMvcAutoConfiguration,basicErrorController,org.springframework.boot.ops.autoconfigure.MetricRepositoryAutoConfiguration,counterService,gaugeService,metricRepository,org.springframework.boot.ops.autoconfigure.MetricFilterAutoConfiguration,metricFilter,org.springframework.boot.ops.autoconfigure.SecurityAutoConfiguration$AuthenticationManagerConfiguration,authenticationManager,org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration,webSecurityExpressionHandler,springSecurityFilterChain,privilegeEvaluator,org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration,objectPostProcessor,org.springframework.boot.ops.autoconfigure.SecurityAutoConfiguration,org.springframework.actuate.properties.SecurityProperties,authenticationEventPublisher,webSecurityConfigurerAdapter,org.springframework.boot.ops.autoconfigure.TraceRepositoryAutoConfiguration,traceRepository,org.springframework.boot.ops.autoconfigure.TraceWebFilterAutoConfiguration,webRequestLoggingFilter]; root of factory hierarchy
+2013-08-02 11:35:58.571  INFO 24001 [main] --- o.e.jetty.server.handler.ContextHandler  : stopped o.e.j.w.WebAppContext{/,null}
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.619 sec - in org.springframework.boot.sample.ops.ShutdownSampleActuatorApplicationTests
+Running org.springframework.boot.sample.ops.ManagementSampleActuatorApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::   v0.5.0.BUILD.SNAPSHOT
+
+02-Aug-2013 11:35:58 org.springframework.boot.StartupInfoLogger log
+INFO: Starting application on dsyer with PID 24001 (/home/dsyer/dev/bootstrap/boot/spring-boot-integration-tests/target/local-repo/org/springframework/boot/spring-boot/0.5.0.BUILD-SNAPSHOT/spring-boot-0.5.0.BUILD-SNAPSHOT.jar started by dsyer)
+02-Aug-2013 11:35:58 org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39ff48d8: startup date [Fri Aug 02 11:35:58 BST 2013]; root of context hierarchy
+02-Aug-2013 11:35:58 org.springframework.beans.factory.support.DefaultListableBeanFactory registerBeanDefinition
+INFO: Overriding bean definition for bean 'propertySourcesBinder': replacing [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+02-Aug-2013 11:35:58 org.springframework.beans.factory.support.DefaultListableBeanFactory registerBeanDefinition
+INFO: Overriding bean definition for bean 'propertySourcesBinder': replacing [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+02-Aug-2013 11:35:58 org.springframework.beans.factory.support.DefaultListableBeanFactory registerBeanDefinition
+INFO: Overriding bean definition for bean 'propertySourcesBinder': replacing [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+2013-08-02 11:35:58.790  INFO 24001 [pool-7-thread-1] --- org.eclipse.jetty.server.Server          : jetty-8.1.9.v20130131
+2013-08-02 11:35:58.790  INFO 24001 [pool-7-thread-1] --- /                                        : Initializing Spring embedded WebApplicationContext
+02-Aug-2013 11:35:58 org.springframework.boot.context.embedded.EmbeddedWebApplicationContext prepareEmbeddedWebApplicationContext
+INFO: Root WebApplicationContext: initialization completed in 136 ms
+02-Aug-2013 11:35:58 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/css/**'], []
+02-Aug-2013 11:35:58 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/js/**'], []
+02-Aug-2013 11:35:58 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/images/**'], []
+02-Aug-2013 11:35:58 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/**/favicon.ico'], []
+02-Aug-2013 11:35:58 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/health'], []
+02-Aug-2013 11:35:58 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: Ant [pattern='/error'], []
+02-Aug-2013 11:35:58 org.springframework.security.web.DefaultSecurityFilterChain <init>
+INFO: Creating filter chain: org.springframework.security.config.annotation.web.builders.HttpSecurity$OrRequestMatcher@470ae2bf, [org.springframework.security.web.context.SecurityContextPersistenceFilter@1bac8e09, org.springframework.security.web.authentication.logout.LogoutFilter@5da0ff10, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@74c9a375, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@620a9239, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24060e78, org.springframework.security.web.session.SessionManagementFilter@99ffac2, org.springframework.security.web.access.ExceptionTranslationFilter@6607db7d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@ddb1fe0]
+2013-08-02 11:35:58.943  INFO 24001 [pool-7-thread-1] --- /                                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+02-Aug-2013 11:35:58 org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'dispatcherServlet': initialization started
+02-Aug-2013 11:35:58 org.springframework.web.servlet.resource.ResourceHttpRequestHandler afterPropertiesSet
+WARNING: Locations list is empty. No resources will be served
+02-Aug-2013 11:35:58 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+02-Aug-2013 11:35:58 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/foo],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String org.springframework.boot.sample.ops.SampleController.foo()
+02-Aug-2013 11:35:58 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.String> org.springframework.boot.sample.ops.SampleController.helloWorld()
+02-Aug-2013 11:35:58 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.ops.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+02-Aug-2013 11:35:58 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[text/html],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.ops.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+02-Aug-2013 11:35:58 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+02-Aug-2013 11:35:58 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+02-Aug-2013 11:35:58 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+02-Aug-2013 11:35:58 org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'dispatcherServlet': initialization completed in 51 ms
+2013-08-02 11:35:58.996  INFO 24001 [pool-7-thread-1] --- o.e.jetty.server.AbstractConnector       : Started SelectChannelConnector@0.0.0.0:9010
+02-Aug-2013 11:35:59 org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4f5f1ace: startup date [Fri Aug 02 11:35:59 BST 2013]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39ff48d8
+2013-08-02 11:35:59.044  INFO 24001 [pool-7-thread-1] --- org.eclipse.jetty.server.Server          : jetty-8.1.9.v20130131
+2013-08-02 11:35:59.045  INFO 24001 [pool-7-thread-1] --- /                                        : Initializing Spring embedded WebApplicationContext
+02-Aug-2013 11:35:59 org.springframework.boot.context.embedded.EmbeddedWebApplicationContext prepareEmbeddedWebApplicationContext
+INFO: Root WebApplicationContext: initialization completed in 17 ms
+2013-08-02 11:35:59.050  INFO 24001 [pool-7-thread-1] --- /                                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+02-Aug-2013 11:35:59 org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'dispatcherServlet': initialization started
+02-Aug-2013 11:35:59 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/env] onto handler of type [class org.springframework.boot.ops.endpoint.EnvironmentEndpoint]
+02-Aug-2013 11:35:59 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/health] onto handler of type [class org.springframework.boot.ops.endpoint.HealthEndpoint]
+02-Aug-2013 11:35:59 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/beans] onto handler of type [class org.springframework.boot.ops.endpoint.BeansEndpoint]
+02-Aug-2013 11:35:59 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/info] onto handler of type [class org.springframework.boot.ops.endpoint.InfoEndpoint]
+02-Aug-2013 11:35:59 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/metrics] onto handler of type [class org.springframework.boot.ops.endpoint.MetricsEndpoint]
+02-Aug-2013 11:35:59 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/trace] onto handler of type [class org.springframework.boot.ops.endpoint.TraceEndpoint]
+02-Aug-2013 11:35:59 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/dump] onto handler of type [class org.springframework.boot.ops.endpoint.DumpEndpoint]
+02-Aug-2013 11:35:59 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/shutdown] onto handler of type [class org.springframework.boot.ops.endpoint.ShutdownEndpoint]
+02-Aug-2013 11:35:59 org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2013-08-02 11:35:59.066  INFO 24001 [pool-7-thread-1] --- o.e.jetty.server.AbstractConnector       : Started SelectChannelConnector@localhost:9011
+2013-08-02 11:35:59.069  INFO 24001 [pool-7-thread-1] --- o.e.jetty.server.AbstractConnector       : Started SelectChannelConnector@localhost:9011
+2013-08-02 11:35:59.070  INFO 24001 [pool-7-thread-1] --- o.e.jetty.server.AbstractConnector       : Started SelectChannelConnector@0.0.0.0:9010
+02-Aug-2013 11:35:59 sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@416b724d5 pairs: {GET / HTTP/1.1: null}{Accept: application/json, application/*+json}{User-Agent: Java/1.6.0_24}{Host: localhost:9010}{Connection: keep-alive}
+02-Aug-2013 11:35:59 org.springframework.context.support.ResourceBundleMessageSource getResourceBundle
+WARNING: ResourceBundle [messages] not found for MessageSource: Can't find bundle for base name messages, locale en_GB
+02-Aug-2013 11:35:59 org.springframework.boot.ops.audit.listener.AuditListener onApplicationEvent
+INFO: AuditEvent [timestamp=Fri Aug 02 11:35:59 BST 2013, principal=<unknown>, type=AUTHENTICATION_FAILURE, data={message=An Authentication object was not found in the SecurityContext, type=org.springframework.security.authentication.AuthenticationCredentialsNotFoundException}]
+02-Aug-2013 11:35:59 sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@78ea5d875 pairs: {null: HTTP/1.1 401 An Authentication object was not found in the SecurityContext}{WWW-Authenticate: Basic realm="Spring"}{Content-Type: application/json;charset=UTF-8}{Transfer-Encoding: chunked}{Server: Jetty(8.1.9.v20130131)}
+02-Aug-2013 11:35:59 org.springframework.web.client.RestTemplate handleResponseError
+WARNING: GET request for "http://localhost:9010" resulted in 401 (An Authentication object was not found in the SecurityContext); invoking error handler
+02-Aug-2013 11:35:59 sun.net.www.protocol.http.HttpURLConnection writeRequests
+FINE: sun.net.www.MessageHeader@40bde56d5 pairs: {GET /health HTTP/1.1: null}{Accept: text/plain, application/json, application/*+json, */*}{User-Agent: Java/1.6.0_24}{Host: localhost:9011}{Connection: keep-alive}
+02-Aug-2013 11:35:59 sun.net.www.protocol.http.HttpURLConnection getInputStream
+FINE: sun.net.www.MessageHeader@1fca73bf4 pairs: {null: HTTP/1.1 200 OK}{Content-Length: 2}{Content-Type: text/plain;charset=ISO-8859-1}{Server: Jetty(8.1.9.v20130131)}
+02-Aug-2013 11:35:59 org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39ff48d8: startup date [Fri Aug 02 11:35:58 BST 2013]; root of context hierarchy
+02-Aug-2013 11:35:59 org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4f5f1ace: startup date [Fri Aug 02 11:35:59 BST 2013]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39ff48d8
+02-Aug-2013 11:35:59 org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@52db59df: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,endpointWebMvcChildContextConfiguration,propertyPlaceholderAutoConfiguration,embeddedServletContainerAutoConfiguration,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,org.springframework.boot.ops.autoconfigure.EndpointWebMvcChildContextConfiguration$EndpointWebMvcChildContextSecurityConfiguration,springSecurityFilterChain,dispatcherServlet,handlerMapping,handlerAdapter,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedJetty,jettyEmbeddedServletContainerFactory,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$DispatcherServletConfiguration,embeddedServletContainerCustomizerBeanPostProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@6c908f05
+2013-08-02 11:35:59.119  INFO 24001 [main] --- o.e.jetty.server.handler.ContextHandler  : stopped o.e.j.w.WebAppContext{/,null}
+02-Aug-2013 11:35:59 org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6c908f05: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,sampleActuatorApplication,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,helloWorldService,sampleController,serviceProperties,propertySourcesBinder,org.springframework.boot.autoconfigure.MessageSourceAutoConfiguration,messageSource,org.springframework.boot.autoconfigure.PropertyPlaceholderAutoConfiguration,propertySourcesPlaceholderConfigurer,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedJetty,jettyEmbeddedServletContainerFactory,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$DispatcherServletConfiguration,dispatcherServlet,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration,embeddedServletContainerCustomizerBeanPostProcessor,org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration,faviconHandlerMapping,faviconRequestHandler,org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration,requestMappingHandlerMapping,mvcContentNegotiationManager,viewControllerHandlerMapping,beanNameHandlerMapping,resourceHandlerMapping,defaultServletHandlerMapping,requestMappingHandlerAdapter,mvcConversionService,mvcValidator,httpRequestHandlerAdapter,simpleControllerHandlerAdapter,handlerExceptionResolver,org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter,org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration,hiddenHttpMethodFilter,org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration,org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration,org.springframework.boot.autoconfigure.web.ServerPropertiesAutoConfiguration,org.springframework.boot.context.embedded.properties.ServerProperties,org.springframework.boot.ops.autoconfigure.AuditAutoConfiguration$AuditEventRepositoryConfiguration,auditEventRepository,org.springframework.boot.ops.autoconfigure.AuditAutoConfiguration,auditListener,authenticationAuditListener,authorizationAuditListener,org.springframework.boot.ops.autoconfigure.EndpointAutoConfiguration$InfoPropertiesConfiguration,org.springframework.boot.ops.autoconfigure.EndpointAutoConfiguration,environmentEndpoint,healthEndpoint,beansEndpoint,infoEndpoint,metricsEndpoint,traceEndpoint,dumpEndpoint,shutdownEndpoint,org.springframework.boot.ops.autoconfigure.ManagementServerPropertiesAutoConfiguration,org.springframework.actuate.properties.ManagementServerProperties,org.springframework.boot.ops.autoconfigure.EndpointWebMvcAutoConfiguration,endpointHandlerMapping,endpointHandlerAdapter,org.springframework.boot.ops.autoconfigure.ErrorMvcAutoConfiguration,basicErrorController,org.springframework.boot.ops.autoconfigure.MetricRepositoryAutoConfiguration,counterService,gaugeService,metricRepository,org.springframework.boot.ops.autoconfigure.MetricFilterAutoConfiguration,metricFilter,org.springframework.boot.ops.autoconfigure.SecurityAutoConfiguration$AuthenticationManagerConfiguration,authenticationManager,org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration,webSecurityExpressionHandler,springSecurityFilterChain,privilegeEvaluator,org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration,objectPostProcessor,org.springframework.boot.ops.autoconfigure.SecurityAutoConfiguration,org.springframework.actuate.properties.SecurityProperties,authenticationEventPublisher,webSecurityConfigurerAdapter,org.springframework.boot.ops.autoconfigure.TraceRepositoryAutoConfiguration,traceRepository,org.springframework.boot.ops.autoconfigure.TraceWebFilterAutoConfiguration,webRequestLoggingFilter]; root of factory hierarchy
+2013-08-02 11:35:59.190  INFO 24001 [main] --- o.e.jetty.server.handler.ContextHandler  : stopped o.e.j.w.WebAppContext{/,null}
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.598 sec - in org.springframework.boot.sample.ops.ManagementSampleActuatorApplicationTests
+
+Results :
+
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 3
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ spring-boot-sample-actuator ---
+[INFO] Building jar: /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator/target/spring-boot-sample-actuator-0.5.0.BUILD-SNAPSHOT.jar
+[INFO] META-INF/maven/org.springframework.boot/spring-boot-sample-actuator/pom.xml already added, skipping
+[INFO] META-INF/maven/org.springframework.boot/spring-boot-sample-actuator/pom.properties already added, skipping
+[INFO] 
+[INFO] --- maven-javadoc-plugin:2.9:jar (attach-javadocs) @ spring-boot-sample-actuator ---
+[INFO] 
+Loading source files for package org.springframework.boot.sample.ops...
+Constructing Javadoc information...
+Standard Doclet version 1.6.0_24
+Building tree for all the packages and classes...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator/target/apidocs/org/springframework/boot/sample/ops/HelloWorldService.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator/target/apidocs/org/springframework/boot/sample/ops/SampleActuatorApplication.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator/target/apidocs/org/springframework/boot/sample/ops/SampleController.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator/target/apidocs/org/springframework/boot/sample/ops/ServiceProperties.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator/target/apidocs/org/springframework/boot/sample/ops/package-frame.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator/target/apidocs/org/springframework/boot/sample/ops/package-summary.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator/target/apidocs/org/springframework/boot/sample/ops/package-tree.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator/target/apidocs/constant-values.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator/target/apidocs/org/springframework/boot/sample/ops/class-use/ServiceProperties.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator/target/apidocs/org/springframework/boot/sample/ops/class-use/SampleActuatorApplication.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator/target/apidocs/org/springframework/boot/sample/ops/class-use/SampleController.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator/target/apidocs/org/springframework/boot/sample/ops/class-use/HelloWorldService.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator/target/apidocs/org/springframework/boot/sample/ops/package-use.html...
+Building index for all the packages and classes...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator/target/apidocs/overview-tree.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator/target/apidocs/index-all.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator/target/apidocs/deprecated-list.html...
+Building index for all classes...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator/target/apidocs/allclasses-frame.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator/target/apidocs/allclasses-noframe.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator/target/apidocs/index.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator/target/apidocs/help-doc.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator/target/apidocs/stylesheet.css...
+[INFO] Building jar: /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator/target/spring-boot-sample-actuator-0.5.0.BUILD-SNAPSHOT-javadoc.jar
+[INFO] 
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ spring-boot-sample-actuator ---
+[INFO] Building jar: /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-actuator/target/spring-boot-sample-actuator-0.5.0.BUILD-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:0.5.0.BUILD-SNAPSHOT:repackage (default) @ spring-boot-sample-actuator ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 19.427s
+[INFO] Finished at: Fri Aug 02 11:36:02 BST 2013
+[INFO] Final Memory: 23M/335M
+[INFO] ------------------------------------------------------------------------

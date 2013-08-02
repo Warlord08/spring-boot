@@ -276,7 +276,7 @@ Would be transformed into these properties:
  
 Would be transformed into these properties:
 
-{% highlight   %}
+{% highlight text  %}
     servers=dev.bar.com,foo.bar.com
     servers[0]=dev.bar.com
     servers[1]=foo.bar.com
@@ -380,7 +380,7 @@ it binds to the `@ConfigurationProperties` beans. If you need custom type conver
 can provide a `ConversionService` bean (with bean id `conversionService`) or custom
 property editors (via a `CustomEditorConfigurer` bean).
 
-### @ConfigurationProperties Validation
+### `@ConfigurationProperties` Validation
 Spring Boot will attempt to validate external configuration, by default using JSR-303 
 (if it is on the classpath). You can simply add JSR-303 `javax.valididation` constraint
 annotations to your `@ConfigurationProperties` class:

@@ -1,0 +1,150 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spring-boot-sample-traditional 0.5.0.BUILD-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+Downloading: file:///home/dsyer/.m2/repository/org/apache/maven/plugins/maven-war-plugin/2.3/maven-war-plugin-2.3.pom
+Downloaded: file:///home/dsyer/.m2/repository/org/apache/maven/plugins/maven-war-plugin/2.3/maven-war-plugin-2.3.pom (8 KB at 553.1 KB/sec)
+Downloading: file:///home/dsyer/.m2/repository/org/apache/maven/plugins/maven-war-plugin/2.3/maven-war-plugin-2.3.jar
+Downloaded: file:///home/dsyer/.m2/repository/org/apache/maven/plugins/maven-war-plugin/2.3/maven-war-plugin-2.3.jar (82 KB at 1731.0 KB/sec)
+Downloading: file:///home/dsyer/.m2/repository/org/apache/tomcat/embed/tomcat-embed-jasper/7.0.42/tomcat-embed-jasper-7.0.42.pom
+Downloaded: file:///home/dsyer/.m2/repository/org/apache/tomcat/embed/tomcat-embed-jasper/7.0.42/tomcat-embed-jasper-7.0.42.pom (2 KB at 73.8 KB/sec)
+Downloading: file:///home/dsyer/.m2/repository/org/eclipse/jdt/core/compiler/ecj/4.2.2/ecj-4.2.2.pom
+Downloaded: file:///home/dsyer/.m2/repository/org/eclipse/jdt/core/compiler/ecj/4.2.2/ecj-4.2.2.pom (2 KB at 52.8 KB/sec)
+Downloading: file:///home/dsyer/.m2/repository/org/apache/tomcat/embed/tomcat-embed-jasper/7.0.42/tomcat-embed-jasper-7.0.42.jar
+Downloading: file:///home/dsyer/.m2/repository/org/eclipse/jdt/core/compiler/ecj/4.2.2/ecj-4.2.2.jar
+Downloaded: file:///home/dsyer/.m2/repository/org/apache/tomcat/embed/tomcat-embed-jasper/7.0.42/tomcat-embed-jasper-7.0.42.jar (778 KB at 3616.0 KB/sec)
+Downloaded: file:///home/dsyer/.m2/repository/org/eclipse/jdt/core/compiler/ecj/4.2.2/ecj-4.2.2.jar (1760 KB at 7094.4 KB/sec)
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ spring-boot-sample-traditional ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ spring-boot-sample-traditional ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-traditional/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ spring-boot-sample-traditional ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ spring-boot-sample-traditional ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-traditional/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.15:test (default-test) @ spring-boot-sample-traditional ---
+[INFO] Surefire report directory: /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-traditional/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.springframework.boot.sample.traditional.SampleTraditionalApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::   v0.5.0.BUILD.SNAPSHOT
+
+2013-08-02 11:35:36.368  INFO 23769 --- [pool-1-thread-1] o.s.boot.SpringApplication               : Starting application on dsyer with PID 23769 (/home/dsyer/dev/bootstrap/boot/spring-boot-integration-tests/target/local-repo/org/springframework/boot/spring-boot/0.5.0.BUILD-SNAPSHOT/spring-boot-0.5.0.BUILD-SNAPSHOT.jar started by dsyer)
+2013-08-02 11:35:36.404  INFO 23769 --- [pool-1-thread-1] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5076e8a7: startup date [Fri Aug 02 11:35:36 BST 2013]; root of context hierarchy
+2013-08-02 11:35:37.256  INFO 23769 --- [pool-1-thread-1] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2013-08-02 11:35:37.256  INFO 23769 --- [pool-1-thread-1] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/7.0.42
+2013-08-02 11:35:37.311  INFO 23769 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2013-08-02 11:35:37.311  INFO 23769 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 910 ms
+2013-08-02 11:35:37.445  INFO 23769 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2013-08-02 11:35:37.445  INFO 23769 --- [ost-startStop-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2013-08-02 11:35:37.562  INFO 23769 --- [ost-startStop-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2013-08-02 11:35:37.587  INFO 23769 --- [ost-startStop-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2013-08-02 11:35:37.758  INFO 23769 --- [ost-startStop-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 312 ms
+2013-08-02 11:35:38.491  INFO 23769 --- [           main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5076e8a7: startup date [Fri Aug 02 11:35:36 BST 2013]; root of context hierarchy
+2013-08-02 11:35:38.491  INFO 23769 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@506835fb: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,sampleTraditionalApplication,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,webConfig,org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration,requestMappingHandlerMapping,mvcContentNegotiationManager,viewControllerHandlerMapping,beanNameHandlerMapping,resourceHandlerMapping,defaultServletHandlerMapping,requestMappingHandlerAdapter,mvcConversionService,mvcValidator,httpRequestHandlerAdapter,simpleControllerHandlerAdapter,handlerExceptionResolver,viewResolver,dispatcherServlet,org.springframework.boot.autoconfigure.MessageSourceAutoConfiguration,messageSource,org.springframework.boot.autoconfigure.PropertyPlaceholderAutoConfiguration,propertySourcesPlaceholderConfigurer,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat,tomcatEmbeddedServletContainerFactory,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$DispatcherServletConfiguration,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration,embeddedServletContainerCustomizerBeanPostProcessor,org.springframework.boot.autoconfigure.web.ServerPropertiesAutoConfiguration,org.springframework.boot.context.embedded.properties.ServerProperties,propertySourcesBinder]; root of factory hierarchy
+2013-08-02 11:35:38.493  INFO 23769 --- [           main] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.61 sec - in org.springframework.boot.sample.traditional.SampleTraditionalApplicationTests
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-war-plugin:2.3:war (default-war) @ spring-boot-sample-traditional ---
+Downloading: file:///home/dsyer/.m2/repository/org/codehaus/plexus/plexus-io/2.0.5/plexus-io-2.0.5.pom
+Downloaded: file:///home/dsyer/.m2/repository/org/codehaus/plexus/plexus-io/2.0.5/plexus-io-2.0.5.pom (3 KB at 1079.6 KB/sec)
+Downloading: file:///home/dsyer/.m2/repository/com/thoughtworks/xstream/xstream/1.4.3/xstream-1.4.3.pom
+Downloaded: file:///home/dsyer/.m2/repository/com/thoughtworks/xstream/xstream/1.4.3/xstream-1.4.3.pom (9 KB at 2792.6 KB/sec)
+Downloading: file:///home/dsyer/.m2/repository/com/thoughtworks/xstream/xstream-parent/1.4.3/xstream-parent-1.4.3.pom
+Downloaded: file:///home/dsyer/.m2/repository/com/thoughtworks/xstream/xstream-parent/1.4.3/xstream-parent-1.4.3.pom (19 KB at 4680.2 KB/sec)
+Downloading: file:///home/dsyer/.m2/repository/org/codehaus/codehaus-parent/3/codehaus-parent-3.pom
+Downloaded: file:///home/dsyer/.m2/repository/org/codehaus/codehaus-parent/3/codehaus-parent-3.pom (5 KB at 1002.7 KB/sec)
+Downloading: file:///home/dsyer/.m2/repository/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.pom
+Downloaded: file:///home/dsyer/.m2/repository/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.pom (386 B at 125.7 KB/sec)
+Downloading: file:///home/dsyer/.m2/repository/org/apache/maven/shared/maven-filtering/1.0-beta-2/maven-filtering-1.0-beta-2.pom
+Downloaded: file:///home/dsyer/.m2/repository/org/apache/maven/shared/maven-filtering/1.0-beta-2/maven-filtering-1.0-beta-2.pom (4 KB at 786.7 KB/sec)
+Downloading: file:///home/dsyer/.m2/repository/org/apache/maven/shared/maven-shared-components/10/maven-shared-components-10.pom
+Downloaded: file:///home/dsyer/.m2/repository/org/apache/maven/shared/maven-shared-components/10/maven-shared-components-10.pom (9 KB at 2058.8 KB/sec)
+Downloading: file:///home/dsyer/.m2/repository/org/apache/maven/maven-parent/9/maven-parent-9.pom
+Downloaded: file:///home/dsyer/.m2/repository/org/apache/maven/maven-parent/9/maven-parent-9.pom (33 KB at 6413.5 KB/sec)
+Downloading: file:///home/dsyer/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.6/plexus-interpolation-1.6.pom
+Downloaded: file:///home/dsyer/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.6/plexus-interpolation-1.6.pom (3 KB at 2838.9 KB/sec)
+Downloading: file:///home/dsyer/.m2/repository/org/codehaus/plexus/plexus-io/2.0.5/plexus-io-2.0.5.jar
+Downloading: file:///home/dsyer/.m2/repository/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar
+Downloading: file:///home/dsyer/.m2/repository/com/thoughtworks/xstream/xstream/1.4.3/xstream-1.4.3.jar
+Downloaded: file:///home/dsyer/.m2/repository/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar (8 KB at 3509.8 KB/sec)
+Downloaded: file:///home/dsyer/.m2/repository/org/codehaus/plexus/plexus-io/2.0.5/plexus-io-2.0.5.jar (57 KB at 28093.8 KB/sec)
+Downloading: file:///home/dsyer/.m2/repository/org/apache/maven/shared/maven-filtering/1.0-beta-2/maven-filtering-1.0-beta-2.jar
+Downloaded: file:///home/dsyer/.m2/repository/org/apache/maven/shared/maven-filtering/1.0-beta-2/maven-filtering-1.0-beta-2.jar (33 KB at 32401.4 KB/sec)
+Downloaded: file:///home/dsyer/.m2/repository/com/thoughtworks/xstream/xstream/1.4.3/xstream-1.4.3.jar (471 KB at 39206.5 KB/sec)
+[INFO] Packaging webapp
+[INFO] Assembling webapp [spring-boot-sample-traditional] in [/home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-traditional/target/spring-boot-sample-traditional-0.5.0.BUILD-SNAPSHOT]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-traditional/src/main/webapp]
+[INFO] Webapp assembled in [71 msecs]
+[INFO] Building war: /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-traditional/target/spring-boot-sample-traditional-0.5.0.BUILD-SNAPSHOT.war
+[INFO] 
+[INFO] --- maven-javadoc-plugin:2.9:jar (attach-javadocs) @ spring-boot-sample-traditional ---
+[INFO] 
+Loading source files for package org.springframework.boot.sample.traditional.config...
+Loading source files for package org.springframework.boot.sample.traditional...
+Constructing Javadoc information...
+Standard Doclet version 1.6.0_24
+Building tree for all the packages and classes...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-traditional/target/apidocs/org/springframework/boot/sample/traditional/config/WebConfig.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-traditional/target/apidocs/org/springframework/boot/sample/traditional/SampleTraditionalApplication.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-traditional/target/apidocs/overview-frame.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-traditional/target/apidocs/org/springframework/boot/sample/traditional/package-frame.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-traditional/target/apidocs/org/springframework/boot/sample/traditional/package-summary.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-traditional/target/apidocs/org/springframework/boot/sample/traditional/package-tree.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-traditional/target/apidocs/org/springframework/boot/sample/traditional/config/package-frame.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-traditional/target/apidocs/org/springframework/boot/sample/traditional/config/package-summary.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-traditional/target/apidocs/org/springframework/boot/sample/traditional/config/package-tree.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-traditional/target/apidocs/constant-values.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-traditional/target/apidocs/org/springframework/boot/sample/traditional/config/class-use/WebConfig.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-traditional/target/apidocs/org/springframework/boot/sample/traditional/class-use/SampleTraditionalApplication.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-traditional/target/apidocs/org/springframework/boot/sample/traditional/package-use.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-traditional/target/apidocs/org/springframework/boot/sample/traditional/config/package-use.html...
+Building index for all the packages and classes...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-traditional/target/apidocs/overview-tree.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-traditional/target/apidocs/index-all.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-traditional/target/apidocs/deprecated-list.html...
+Building index for all classes...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-traditional/target/apidocs/allclasses-frame.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-traditional/target/apidocs/allclasses-noframe.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-traditional/target/apidocs/index.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-traditional/target/apidocs/overview-summary.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-traditional/target/apidocs/help-doc.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-traditional/target/apidocs/stylesheet.css...
+[INFO] Building jar: /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-traditional/target/spring-boot-sample-traditional-0.5.0.BUILD-SNAPSHOT-javadoc.jar
+[INFO] 
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ spring-boot-sample-traditional ---
+[INFO] Building jar: /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-traditional/target/spring-boot-sample-traditional-0.5.0.BUILD-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:0.5.0.BUILD-SNAPSHOT:repackage (default) @ spring-boot-sample-traditional ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 9.670s
+[INFO] Finished at: Fri Aug 02 11:35:41 BST 2013
+[INFO] Final Memory: 21M/335M
+[INFO] ------------------------------------------------------------------------

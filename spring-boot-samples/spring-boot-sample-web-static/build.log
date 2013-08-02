@@ -1,0 +1,108 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spring-boot-sample-web-static 0.5.0.BUILD-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ spring-boot-sample-web-static ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-web-static/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ spring-boot-sample-web-static ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-web-static/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ spring-boot-sample-web-static ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-web-static/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ spring-boot-sample-web-static ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-web-static/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.15:test (default-test) @ spring-boot-sample-web-static ---
+[INFO] Surefire report directory: /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-web-static/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.springframework.boot.sample.ui.SampleWebStaticApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::   v0.5.0.BUILD.SNAPSHOT
+
+2013-08-02 11:36:07.446  INFO 24288 --- [pool-1-thread-1] o.s.boot.SpringApplication               : Starting application on dsyer with PID 24288 (/home/dsyer/dev/bootstrap/boot/spring-boot-integration-tests/target/local-repo/org/springframework/boot/spring-boot/0.5.0.BUILD-SNAPSHOT/spring-boot-0.5.0.BUILD-SNAPSHOT.jar started by dsyer)
+2013-08-02 11:36:07.473  INFO 24288 --- [pool-1-thread-1] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@26d66426: startup date [Fri Aug 02 11:36:07 BST 2013]; root of context hierarchy
+2013-08-02 11:36:08.252  INFO 24288 --- [pool-1-thread-1] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2013-08-02 11:36:08.252  INFO 24288 --- [pool-1-thread-1] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/7.0.42
+2013-08-02 11:36:08.328  INFO 24288 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2013-08-02 11:36:08.328  INFO 24288 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 857 ms
+2013-08-02 11:36:11.921  INFO 24288 --- [ost-startStop-1] o.a.catalina.util.SessionIdGenerator     : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [3,478] milliseconds.
+2013-08-02 11:36:11.937  INFO 24288 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2013-08-02 11:36:11.937  INFO 24288 --- [ost-startStop-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2013-08-02 11:36:11.965  WARN 24288 --- [ost-startStop-1] o.s.w.s.r.ResourceHttpRequestHandler     : Locations list is empty. No resources will be served
+2013-08-02 11:36:11.974  INFO 24288 --- [ost-startStop-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2013-08-02 11:36:12.062  INFO 24288 --- [ost-startStop-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2013-08-02 11:36:12.073  INFO 24288 --- [ost-startStop-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2013-08-02 11:36:12.073  INFO 24288 --- [ost-startStop-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/resources/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2013-08-02 11:36:12.076  INFO 24288 --- [ost-startStop-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2013-08-02 11:36:12.322  INFO 24288 --- [ost-startStop-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 385 ms
+2013-08-02 11:36:12.502  INFO 24288 --- [           main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@26d66426: startup date [Fri Aug 02 11:36:07 BST 2013]; root of context hierarchy
+2013-08-02 11:36:12.503  INFO 24288 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3c7976c1: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,sampleWebStaticApplication,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,org.springframework.boot.autoconfigure.MessageSourceAutoConfiguration,messageSource,org.springframework.boot.autoconfigure.PropertyPlaceholderAutoConfiguration,propertySourcesPlaceholderConfigurer,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat,tomcatEmbeddedServletContainerFactory,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$DispatcherServletConfiguration,dispatcherServlet,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration,embeddedServletContainerCustomizerBeanPostProcessor,org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration,faviconHandlerMapping,faviconRequestHandler,org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration,requestMappingHandlerMapping,mvcContentNegotiationManager,viewControllerHandlerMapping,beanNameHandlerMapping,resourceHandlerMapping,defaultServletHandlerMapping,requestMappingHandlerAdapter,mvcConversionService,mvcValidator,httpRequestHandlerAdapter,simpleControllerHandlerAdapter,handlerExceptionResolver,org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter,org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration,hiddenHttpMethodFilter,org.springframework.boot.autoconfigure.web.ServerPropertiesAutoConfiguration,org.springframework.boot.context.embedded.properties.ServerProperties,propertySourcesBinder]; root of factory hierarchy
+2013-08-02 11:36:12.556  INFO 24288 --- [           main] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.571 sec - in org.springframework.boot.sample.ui.SampleWebStaticApplicationTests
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-war-plugin:2.3:war (default-war) @ spring-boot-sample-web-static ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [spring-boot-sample-web-static] in [/home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-web-static/target/spring-boot-sample-web-static-0.5.0.BUILD-SNAPSHOT]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-web-static/src/main/webapp]
+[INFO] Webapp assembled in [278 msecs]
+[INFO] Building war: /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-web-static/target/spring-boot-sample-web-static-0.5.0.BUILD-SNAPSHOT.war
+[INFO] 
+[INFO] --- maven-javadoc-plugin:2.9:jar (attach-javadocs) @ spring-boot-sample-web-static ---
+[INFO] 
+Loading source files for package org.springframework.boot.sample.ui...
+Constructing Javadoc information...
+Standard Doclet version 1.6.0_24
+Building tree for all the packages and classes...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-web-static/target/apidocs/org/springframework/boot/sample/ui/SampleWebStaticApplication.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-web-static/target/apidocs/org/springframework/boot/sample/ui/package-frame.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-web-static/target/apidocs/org/springframework/boot/sample/ui/package-summary.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-web-static/target/apidocs/org/springframework/boot/sample/ui/package-tree.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-web-static/target/apidocs/constant-values.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-web-static/target/apidocs/org/springframework/boot/sample/ui/class-use/SampleWebStaticApplication.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-web-static/target/apidocs/org/springframework/boot/sample/ui/package-use.html...
+Building index for all the packages and classes...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-web-static/target/apidocs/overview-tree.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-web-static/target/apidocs/index-all.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-web-static/target/apidocs/deprecated-list.html...
+Building index for all classes...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-web-static/target/apidocs/allclasses-frame.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-web-static/target/apidocs/allclasses-noframe.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-web-static/target/apidocs/index.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-web-static/target/apidocs/help-doc.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-web-static/target/apidocs/stylesheet.css...
+[INFO] Building jar: /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-web-static/target/spring-boot-sample-web-static-0.5.0.BUILD-SNAPSHOT-javadoc.jar
+[INFO] 
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ spring-boot-sample-web-static ---
+[INFO] Building jar: /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-web-static/target/spring-boot-sample-web-static-0.5.0.BUILD-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:0.5.0.BUILD-SNAPSHOT:repackage (default) @ spring-boot-sample-web-static ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 12.886s
+[INFO] Finished at: Fri Aug 02 11:36:16 BST 2013
+[INFO] Final Memory: 20M/216M
+[INFO] ------------------------------------------------------------------------

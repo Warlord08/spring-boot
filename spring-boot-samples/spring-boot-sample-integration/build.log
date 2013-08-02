@@ -1,0 +1,140 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spring-boot-sample-integration 0.5.0.BUILD-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ spring-boot-sample-integration ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ spring-boot-sample-integration ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-integration/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ spring-boot-sample-integration ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-integration/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ spring-boot-sample-integration ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-integration/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.15:test (default-test) @ spring-boot-sample-integration ---
+[INFO] Surefire report directory: /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-integration/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.springframework.boot.sample.integration.consumer.SampleIntegrationApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::   v0.5.0.BUILD.SNAPSHOT
+
+[2013-08-02 11:36:21.456] - 24464  INFO [main] --- o.a.m.s.b.ForkedBooter: Starting ForkedBooter v2.15 on dsyer with PID 24464 (/home/dsyer/dev/bootstrap/boot/spring-boot-integration-tests/target/local-repo/org/apache/maven/surefire/surefire-booter/2.15/surefire-booter-2.15.jar started by dsyer)
+[2013-08-02 11:36:21.493] - 24464  INFO [main] --- o.s.c.a.AnnotationConfigApplicationContext: Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3ff2cea2: startup date [Fri Aug 02 11:36:21 BST 2013]; root of context hierarchy
+[2013-08-02 11:36:21.617] - 24464  INFO [main] --- o.s.b.f.x.XmlBeanDefinitionReader: Loading XML bean definitions from class path resource [integration-context.xml]
+[2013-08-02 11:36:21.927] - 24464  INFO [main] --- o.s.b.f.s.DefaultListableBeanFactory: Overriding bean definition for bean 'propertySourcesBinder': replacing [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+[2013-08-02 11:36:21.978] - 24464  INFO [main] --- o.s.i.c.x.DefaultConfiguringBeanFactoryPostProcessor: No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+[2013-08-02 11:36:21.978] - 24464  INFO [main] --- o.s.i.c.x.DefaultConfiguringBeanFactoryPostProcessor: No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+[2013-08-02 11:36:22.223] - 24464  INFO [main] --- o.s.s.c.ThreadPoolTaskScheduler: Initializing ExecutorService  'taskScheduler'
+[2013-08-02 11:36:22.229] - 24464  INFO [main] --- o.s.c.s.DefaultLifecycleProcessor: Starting beans in phase -2147483648
+[2013-08-02 11:36:22.229] - 24464  INFO [main] --- o.s.i.e.EventDrivenConsumer: Adding {service-activator} as a subscriber to the 'input' channel
+[2013-08-02 11:36:22.230] - 24464  INFO [main] --- o.s.i.c.DirectChannel: Channel 'input' has 1 subscriber(s).
+[2013-08-02 11:36:22.230] - 24464  INFO [main] --- o.s.i.e.EventDrivenConsumer: started org.springframework.integration.config.ConsumerEndpointFactoryBean#0
+[2013-08-02 11:36:22.230] - 24464  INFO [main] --- o.s.i.e.EventDrivenConsumer: Adding {message-handler} as a subscriber to the 'output' channel
+[2013-08-02 11:36:22.230] - 24464  INFO [main] --- o.s.i.c.DirectChannel: Channel 'output' has 1 subscriber(s).
+[2013-08-02 11:36:22.230] - 24464  INFO [main] --- o.s.i.e.EventDrivenConsumer: started org.springframework.integration.config.ConsumerEndpointFactoryBean#1
+[2013-08-02 11:36:22.230] - 24464  INFO [main] --- o.s.i.e.EventDrivenConsumer: Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+[2013-08-02 11:36:22.230] - 24464  INFO [main] --- o.s.i.c.PublishSubscribeChannel: Channel 'errorChannel' has 1 subscriber(s).
+[2013-08-02 11:36:22.230] - 24464  INFO [main] --- o.s.i.e.EventDrivenConsumer: started _org.springframework.integration.errorLogger
+[2013-08-02 11:36:22.230] - 24464  INFO [main] --- o.s.c.s.DefaultLifecycleProcessor: Starting beans in phase 2147483647
+[2013-08-02 11:36:22.232] - 24464  INFO [main] --- o.s.i.e.SourcePollingChannelAdapter: started org.springframework.integration.config.SourcePollingChannelAdapterFactoryBean#0
+2013-08-02 11:36:22.264  INFO 24464 --- [ask-scheduler-1] o.s.i.file.FileReadingMessageSource      : Created message: [[Payload=target/input/data1374841113621.txt][Headers={timestamp=1375439782264, id=5eef1316-2192-4cc9-a083-bbfb80d1b9b0}]]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::   v0.5.0.BUILD.SNAPSHOT
+
+[2013-08-02 11:36:22.294] - 24464  INFO [main] --- o.a.m.s.b.ForkedBooter: Starting ForkedBooter v2.15 on dsyer with PID 24464 (/home/dsyer/dev/bootstrap/boot/spring-boot-integration-tests/target/local-repo/org/apache/maven/surefire/surefire-booter/2.15/surefire-booter-2.15.jar started by dsyer)
+[2013-08-02 11:36:22.295] - 24464  INFO [main] --- o.s.c.a.AnnotationConfigApplicationContext: Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@12746ad0: startup date [Fri Aug 02 11:36:22 BST 2013]; root of context hierarchy
+[2013-08-02 11:36:22.545] - 24464  INFO [main] --- o.s.c.a.AnnotationConfigApplicationContext: Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@3ff2cea2: startup date [Fri Aug 02 11:36:21 BST 2013]; root of context hierarchy
+[2013-08-02 11:36:22.546] - 24464  INFO [main] --- o.s.c.s.DefaultLifecycleProcessor: Stopping beans in phase 2147483647
+[2013-08-02 11:36:22.547] - 24464  INFO [main] --- o.s.i.e.SourcePollingChannelAdapter: stopped org.springframework.integration.config.SourcePollingChannelAdapterFactoryBean#0
+[2013-08-02 11:36:22.548] - 24464  INFO [main] --- o.s.c.s.DefaultLifecycleProcessor: Stopping beans in phase -2147483648
+[2013-08-02 11:36:22.548] - 24464  INFO [main] --- o.s.i.e.EventDrivenConsumer: Removing {service-activator} as a subscriber to the 'input' channel
+[2013-08-02 11:36:22.548] - 24464  INFO [main] --- o.s.i.c.DirectChannel: Channel 'input' has 0 subscriber(s).
+[2013-08-02 11:36:22.549] - 24464  INFO [main] --- o.s.i.e.EventDrivenConsumer: stopped org.springframework.integration.config.ConsumerEndpointFactoryBean#0
+[2013-08-02 11:36:22.549] - 24464  INFO [main] --- o.s.i.e.EventDrivenConsumer: Removing {message-handler} as a subscriber to the 'output' channel
+[2013-08-02 11:36:22.549] - 24464  INFO [main] --- o.s.i.c.DirectChannel: Channel 'output' has 0 subscriber(s).
+[2013-08-02 11:36:22.549] - 24464  INFO [main] --- o.s.i.e.EventDrivenConsumer: stopped org.springframework.integration.config.ConsumerEndpointFactoryBean#1
+[2013-08-02 11:36:22.550] - 24464  INFO [main] --- o.s.i.e.EventDrivenConsumer: Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+[2013-08-02 11:36:22.550] - 24464  INFO [main] --- o.s.i.c.PublishSubscribeChannel: Channel 'errorChannel' has 0 subscriber(s).
+[2013-08-02 11:36:22.550] - 24464  INFO [main] --- o.s.i.e.EventDrivenConsumer: stopped _org.springframework.integration.errorLogger
+[2013-08-02 11:36:22.550] - 24464  INFO [main] --- o.s.b.f.s.DefaultListableBeanFactory: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@238b8914: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,sampleIntegrationApplication,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,producerApplication,sampleEndpoint,helloWorldService,channelInitializer,$autoCreateChannelCandidates,org.springframework.integration.internalDefaultConfiguringBeanFactoryPostProcessor,org.springframework.integration.file.config.FileListFilterFactoryBean#0,org.springframework.integration.file.config.FileReadingMessageSourceFactoryBean#0,org.springframework.scheduling.support.PeriodicTrigger#0,org.springframework.integration.config.SourcePollingChannelAdapterFactoryBean#0,org.springframework.integration.config.ServiceActivatorFactoryBean#0,org.springframework.integration.config.ConsumerEndpointFactoryBean#0,output,org.springframework.integration.file.config.FileWritingMessageHandlerFactoryBean#0,org.springframework.integration.config.ConsumerEndpointFactoryBean#1,org.springframework.boot.sample.integration.ServiceProperties,propertySourcesBinder,org.springframework.boot.autoconfigure.MessageSourceAutoConfiguration,messageSource,org.springframework.boot.autoconfigure.PropertyPlaceholderAutoConfiguration,propertySourcesPlaceholderConfigurer,org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration,embeddedServletContainerCustomizerBeanPostProcessor,org.springframework.boot.autoconfigure.web.ServerPropertiesAutoConfiguration,org.springframework.boot.context.embedded.properties.ServerProperties,nullChannel,errorChannel,_org.springframework.integration.errorLogger,taskScheduler,org.springframework.integration.config.IdGeneratorConfigurer#0,input]; root of factory hierarchy
+[2013-08-02 11:36:22.552] - 24464  INFO [main] --- o.s.s.c.ThreadPoolTaskScheduler: Shutting down ExecutorService 'taskScheduler'
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.528 sec - in org.springframework.boot.sample.integration.consumer.SampleIntegrationApplicationTests
+[2013-08-02 11:36:22.564] - 24464  INFO [Thread-2] --- o.s.c.a.AnnotationConfigApplicationContext: Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@12746ad0: startup date [Fri Aug 02 11:36:22 BST 2013]; root of context hierarchy
+[2013-08-02 11:36:22.564] - 24464  INFO [Thread-2] --- o.s.b.f.s.DefaultListableBeanFactory: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@514d556e: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,producerApplication,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor]; root of factory hierarchy
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ spring-boot-sample-integration ---
+[INFO] Building jar: /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-integration/target/spring-boot-sample-integration-0.5.0.BUILD-SNAPSHOT.jar
+[INFO] META-INF/maven/org.springframework.boot/spring-boot-sample-integration/pom.xml already added, skipping
+[INFO] META-INF/maven/org.springframework.boot/spring-boot-sample-integration/pom.properties already added, skipping
+[INFO] 
+[INFO] --- maven-javadoc-plugin:2.9:jar (attach-javadocs) @ spring-boot-sample-integration ---
+[INFO] 
+Loading source files for package org.springframework.boot.sample.integration...
+Constructing Javadoc information...
+Standard Doclet version 1.6.0_24
+Building tree for all the packages and classes...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-integration/target/apidocs/org/springframework/boot/sample/integration/HelloWorldService.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-integration/target/apidocs/org/springframework/boot/sample/integration/SampleEndpoint.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-integration/target/apidocs/org/springframework/boot/sample/integration/SampleIntegrationApplication.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-integration/target/apidocs/org/springframework/boot/sample/integration/ServiceProperties.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-integration/target/apidocs/org/springframework/boot/sample/integration/package-frame.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-integration/target/apidocs/org/springframework/boot/sample/integration/package-summary.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-integration/target/apidocs/org/springframework/boot/sample/integration/package-tree.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-integration/target/apidocs/constant-values.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-integration/target/apidocs/org/springframework/boot/sample/integration/class-use/ServiceProperties.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-integration/target/apidocs/org/springframework/boot/sample/integration/class-use/SampleIntegrationApplication.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-integration/target/apidocs/org/springframework/boot/sample/integration/class-use/HelloWorldService.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-integration/target/apidocs/org/springframework/boot/sample/integration/class-use/SampleEndpoint.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-integration/target/apidocs/org/springframework/boot/sample/integration/package-use.html...
+Building index for all the packages and classes...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-integration/target/apidocs/overview-tree.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-integration/target/apidocs/index-all.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-integration/target/apidocs/deprecated-list.html...
+Building index for all classes...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-integration/target/apidocs/allclasses-frame.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-integration/target/apidocs/allclasses-noframe.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-integration/target/apidocs/index.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-integration/target/apidocs/help-doc.html...
+Generating /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-integration/target/apidocs/stylesheet.css...
+[INFO] Building jar: /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-integration/target/spring-boot-sample-integration-0.5.0.BUILD-SNAPSHOT-javadoc.jar
+[INFO] 
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ spring-boot-sample-integration ---
+[INFO] Building jar: /home/dsyer/dev/bootstrap/boot/spring-boot-samples/spring-boot-sample-integration/target/spring-boot-sample-integration-0.5.0.BUILD-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:0.5.0.BUILD-SNAPSHOT:repackage (default) @ spring-boot-sample-integration ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 7.626s
+[INFO] Finished at: Fri Aug 02 11:36:24 BST 2013
+[INFO] Final Memory: 19M/211M
+[INFO] ------------------------------------------------------------------------
