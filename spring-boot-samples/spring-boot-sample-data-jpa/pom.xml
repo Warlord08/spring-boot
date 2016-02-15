@@ -17,6 +17,7 @@
 	</organization>
 	<properties>
 		<main.basedir>${basedir}/../..</main.basedir>
+		<spring-data-releasetrain.version>Hopper-M1</spring-data-releasetrain.version>
 	</properties>
 	<dependencies>
 		<dependency>
